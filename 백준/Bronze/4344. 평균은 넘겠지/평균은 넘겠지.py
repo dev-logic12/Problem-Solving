@@ -9,7 +9,3 @@ for _ in range(n):
             cnt += 1
     rate = cnt/nums[0]*100
     print(f'{rate:.3f}%')
-    
-
-
-
