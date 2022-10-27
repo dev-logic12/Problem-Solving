@@ -1,5 +1,5 @@
 word = input()
-alphabet = list(range(97,123))
+a = list(range(97,123))
 
-for x in alphabet:
+for x in a:
     print(word.find(chr(x)))
