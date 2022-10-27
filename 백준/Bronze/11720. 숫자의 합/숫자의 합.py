@@ -1,2 +1,3 @@
-n = int(input())
-print(sum(map(int, input())))
+n = input()
+
+print(sum(map(int,input())))
