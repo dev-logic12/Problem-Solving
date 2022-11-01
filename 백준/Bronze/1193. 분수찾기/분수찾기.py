@@ -1,27 +1,15 @@
-inputnum = int(input())
+a = int(input())
 
-line = 0  # 사선 라인
-maxnum = 0  # 입력된 숫자(input_num 변수)의 라인에서 가장 큰 숫자
-while inputnum > maxnum:
-    line += 1  
-    maxnum += line  
-
-gap = maxnum - inputnum
-if line % 2 == 0:  # 사선 라인이 짝수번째 일 때
-    top = line - gap  #분자
-    under = gap + 1  #분모
-else :  # 사선 라인이 홀수번째 일 때
-    top = gap + 1  #분자
-    under = line - gap  #분모
+line = 0 
+b = 0
+while a > b :
+    line += 1
+    b += line 
+gap = b - a 
+if line % 2 == 0:
+    top = line - gap
+    under = gap + 1 
+else:
+    top = gap + 1
+    under = line - gap
 print(f'{top}/{under}')
-
-
-
-
-
-
-
-
-
-
-
