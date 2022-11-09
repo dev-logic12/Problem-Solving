@@ -1,6 +1,4 @@
+import numpy as np
 def solution(num_list, n):
-    answer = []
-    for i in range(len(num_list)//n):
-        answer.append(num_list[:n])
-        num_list = num_list[n:]
-    return answer
+    li = np.array(num_list).reshape(-1,n)
+    return li.tolist()
