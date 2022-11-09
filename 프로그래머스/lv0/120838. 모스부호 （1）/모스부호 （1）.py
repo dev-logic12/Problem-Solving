@@ -1,5 +1,5 @@
 def solution(letter):
-    morse = morse = {
+      morse = {
         ".-": "a",
         "-...": "b",
         "-.-.": "c",
