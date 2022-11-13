@@ -1,10 +1,12 @@
+
 def solution(n):
-    d = 2
-    s = set()
-    while d <= n:
-        if n % d == 0:
-            s.add(d)
-            n = n / d
-        else:
-            d = d + 1
-    return sorted(list(s))
+    k = 2
+    answer = []
+    while n>1:
+        if n%k==0:
+            answer.append(k)
+            while n%k==0:
+                n//=k
+        k+=1
+
+    return answer
