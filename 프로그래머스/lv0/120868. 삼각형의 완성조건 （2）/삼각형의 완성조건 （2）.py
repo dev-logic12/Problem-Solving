@@ -1,4 +1,2 @@
 def solution(sides):
-    a = max(sides) - min(sides)
-    b = max(sides) + min(sides)
-    return b-a-1
+    return sum(sides) - max(sides) + min(sides) -1
