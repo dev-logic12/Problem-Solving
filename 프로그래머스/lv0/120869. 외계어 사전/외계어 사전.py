@@ -1,5 +1,5 @@
 def solution(spell, dic):
-    for d in dic:
-        if sorted(d) == sorted(spell):
+    for i in dic:
+        if set(spell) == set(i):
             return 1
     return 2
