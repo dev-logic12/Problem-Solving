@@ -1,3 +1,7 @@
 def solution(chicken):
-    answer = (max(chicken, 1)-1)//9
-    return answer
+    answer = 0
+    while chicken >= 10:
+        chicken, mod = divmod(chicken, 10)
+        answer += chicken
+        chicken += mod
+    return answer 
