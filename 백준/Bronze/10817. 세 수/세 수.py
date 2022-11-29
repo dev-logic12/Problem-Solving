@@ -1,3 +1,3 @@
-num_list = list(map(int, input().split()))
-num_list.sort()
-print(num_list[1])
+a = list(map(int, input().split()))
+d = sorted(a)
+print(d[1])
