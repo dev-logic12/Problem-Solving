@@ -1,1 +1,6 @@
-solution = lambda array, n: array.count(n)
+def solution(array, n):
+    count = 0
+    for i in array:
+        if i==n:
+            count +=1
+    return count
