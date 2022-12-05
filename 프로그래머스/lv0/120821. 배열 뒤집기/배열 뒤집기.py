@@ -1,2 +1,2 @@
-def solution(num_list):
-    return num_list[::-1]
+solution = lambda num_list: num_list[::-1]
+
