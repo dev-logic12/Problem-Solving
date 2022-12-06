@@ -1,3 +1,3 @@
-def solution(money):
-    return [int(money//5500), int(money%5500)]
+solution = lambda money: [int(money)//5500, int(money)%5500]
+
 
