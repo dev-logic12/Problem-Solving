@@ -1,4 +1,1 @@
-def solution(array):
-    answer = 0
-    array.sort()
-    return array[len(array)//2]
+solution = lambda array : sorted(array)[len(array)//2]
