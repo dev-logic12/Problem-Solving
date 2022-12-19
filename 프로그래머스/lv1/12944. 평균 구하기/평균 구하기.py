@@ -1,2 +1,3 @@
-def solution(arr):
-    return sum(arr) / len(arr)
+solution = lambda arr: sum(arr) / len(arr)
+
+    
