@@ -1,3 +1,6 @@
-solution = lambda arr: sum(arr) / len(arr)
+import statistics
+
+def solution(arr):
+    return statistics.mean(arr)
 
     
