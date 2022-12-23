@@ -1,5 +1,3 @@
 def solution(n):
-    ls = list(str(int(n)))
-    ls.sort(reverse = True)
-    print(ls)
+    ls = list(sorted(str(n), reverse = True))
     return int("".join(ls))
