@@ -1,4 +1,4 @@
 def solution(phone_number):
-    num = len(phone_number)
-    back = phone_number[-4:]
-    return "*"*(num-4)+back
+    # answer = phone_number.replace(phone_number[:-5], '*')
+    answer = "*"*(len(phone_number)-4)
+    return answer + (phone_number[-4:])
