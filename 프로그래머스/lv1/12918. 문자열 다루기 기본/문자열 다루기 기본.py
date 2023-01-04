@@ -1,1 +1,2 @@
-solution = lambda s: True if len(s) in (4,6) and s.isdigit() else False
+def solution(s):
+    return s.isdigit() and len(s) in (4, 6)
