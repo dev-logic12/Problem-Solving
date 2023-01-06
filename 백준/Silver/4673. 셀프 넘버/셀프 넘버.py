@@ -1,10 +1,11 @@
-numbers = set(range(1, 10000))
-remove_set = set()  # 생성자가 있는 숫자 set
-for num in numbers :
-    for n in str(num):
-        num += int(n)
-    remove_set.add(num)  # add: 집합에 요소를 추가할 때
+natural_num = set(range(1, 10001))
+generated_num = set()
 
-self_numbers = numbers - remove_set  # set의 '-' 연산자로 차집합을 구함
-for self_num in sorted(self_numbers):  # sorted 함수로 정렬
-    print(self_num)
+for i in range(1, 10001):       # i = 850       
+    for j in str(i):            # j = "8", "5", "0"
+        i += int(j)             # 850 + 8 + 5 + 0, i = 863
+    generated_num.add(i)        # 생성자가 있는 숫자들
+
+self_num = sorted(natural_num - generated_num)
+for i in self_num:
+    print(i)
