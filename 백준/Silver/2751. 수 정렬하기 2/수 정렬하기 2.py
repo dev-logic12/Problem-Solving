@@ -1,7 +1,7 @@
-import sys
+import sys 
+input = sys.stdin.readline
+
 n = int(input())
-l = []
-for i in range(n):
-    l.append(int(sys.stdin.readline()))
-for i in sorted(l):
-    sys.stdout.write(str(i)+'\n')
+
+array = [int(input()) for _ in range(n)]
+print("\n".join(map(str, sorted(array))))
