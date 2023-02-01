@@ -1,42 +1,42 @@
-from collections import deque
 import sys
-
-d = deque()
+input = sys.stdin.readline
 n = int(input())
 
-for i in range(n):
-    command = sys.stdin.readline().split()
+d = []
 
-    if command[0] == "push_front":
-        d.appendleft(command[1])
-    elif command[0] == "push_back":
+for _ in range(n):
+    command = input().split()
+    
+    if command[0] == 'push_front':
+        d.insert(0,command[1])
+    if command[0] == 'push_back':
         d.append(command[1])
-    elif command[0] == "pop_front":
-        if d:
-            print(d[0])    
-            d.popleft()
+    elif command[0] == 'back':
+        if len(d) == 0:
+            print(-1)
         else:
-            print("-1")
-    elif command[0] == "pop_back":
-        if d:
-            print(d[len(d) - 1])    
-            d.pop()
+            print(d[-1])
+    elif command[0] == 'front':
+        if len(d) == 0:
+            print(-1)
         else:
-            print("-1")
-    elif command[0] == "size":
-        print(len(d))
-    elif command[0] == "empty":
-        if d:
-            print("0")
-        else:
-            print("1")
-    elif command[0] == "front":
-        if d:
             print(d[0])
+    elif command[0] == 'size':
+        print(len(d))
+    elif command[0] == 'pop_front':
+        if len(d) == 0:
+            print(-1)
         else:
-            print("-1")
-    elif command[0] == "back":
-        if d:
-            print(d[len(d) - 1])
+            popN =  d.pop(0)
+            print(popN)
+    elif command[0] == 'pop_back':
+        if len(d) == 0:
+            print(-1)
         else:
-            print("-1")
+            popN =  d.pop(-1)
+            print(popN)
+    elif command[0] == 'empty':
+        if len(d) == 0:
+            print(1)
+        else:
+            print(0)
