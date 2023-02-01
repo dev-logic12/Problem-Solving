@@ -1,6 +1,6 @@
-arr = input()
-cnt = [0]*26
-
-for i in arr:
-    cnt[ord(i)-97]+= 1
-print(*cnt)
+s = input()
+al = "abcdefghijklmnopqrstuvwxyz"
+for i in range(26):
+    x = al[i]
+    sx = s.count(x)
+    print(sx, end=" ")
