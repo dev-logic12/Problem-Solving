@@ -1,31 +1,30 @@
-import sys 
-
+import sys
 n = int(sys.stdin.readline())
 stack = []
 
 for _ in range(n):
     word = sys.stdin.readline().split()
-    order = word[0]
 
-    if order == 'push':
+    if word[0] == 'push':
         stack.append(word[1])
 
-    elif order == 'pop':
-        if len(stack)==0:
+    elif word[0] == 'pop':
+        if len(stack) == 0:
             print(-1)
         else:
             print(stack.pop())
-    elif order == 'size':
+
+    elif word[0] == 'size':
         print(len(stack))
-        
-    elif order == 'empty':
-        if len(stack)==0:
+
+    elif word[0] == 'empty':
+        if len(stack) == 0:
             print(1)
         else:
             print(0)
-    elif order == 'top':
-        if len(stack)==0:
+
+    elif word[0] == 'top':
+        if len(stack) == 0:
             print(-1)
         else:
             print(stack[-1])
-
