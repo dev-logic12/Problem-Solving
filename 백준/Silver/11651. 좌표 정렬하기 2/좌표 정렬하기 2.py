@@ -1,9 +1,12 @@
-num = int(input())
-a = []
-for i in range(num):
-    [x,y] = map(int, input().split())
-    rev = [y,x]
-    a.append(rev)
-b = sorted(a)
-for i in range(num):
-    print(b[i][1], b[i][0])
+import sys
+input = sys.stdin.readline
+n = int(input())
+
+array = []
+for i in range(n):
+    x,y = map(int, input().split())
+    array.append([y,x])
+s_array = sorted(array)
+
+for y,x in s_array:
+    print(x,y)
