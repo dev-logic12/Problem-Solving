@@ -1,6 +1,6 @@
-import statistics
+import statistics 
 
 def solution(arr):
-    return statistics.mean(arr)
+  return statistics.mean(arr)
 
     
