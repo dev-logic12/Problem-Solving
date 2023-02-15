@@ -1,15 +1,11 @@
 def solution(sizes):
-
-    가로 = []
-    세로 = []
-
-    for size in sizes:
-        if size[0] >= size[1]:
-            가로.append(size[0])
-            세로.append(size[1])
-        else:
-            세로.append(size[0])
-            가로.append(size[1])
-    
-    return max(가로) * max(세로)
-
+    w = []
+    h = []
+    for i in range(len(sizes)):
+        if sizes[i][0] > sizes[i][1]:
+            w.append(sizes[i][0])
+            h.append(sizes[i][1])
+        else: 
+            w.append(sizes[i][1])
+            h.append(sizes[i][0])
+    return max(w)*max(h)
