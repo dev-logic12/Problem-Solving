@@ -1,10 +1,10 @@
 # [level 1] 완주하지 못한 선수 - 42576 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42576) 
 
 ### 성능 요약
 
-메모리: 38.9 MB, 시간: 76.39 ms
+메모리: 26.3 MB, 시간: 76.64 ms
 
 ### 구분
 
@@ -12,7 +12,7 @@
 
 ### 채점결과
 
-<br/>정확성: 50.0<br/>효율성: 50.0<br/>합계: 100.0 / 100.0
+<br/>정확성: 58.3<br/>효율성: 41.7<br/>합계: 100.0 / 100.0
 
 ### 문제 설명
 
@@ -64,6 +64,10 @@
 
 <p style="user-select: auto;">예제 #3<br style="user-select: auto;">
 "mislav"는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.</p>
+
+<hr style="user-select: auto;">
+
+<p style="user-select: auto;">※ 공지 - 2023년 01월 25일 테스트케이스가 추가되었습니다.</p>
 
 <p style="user-select: auto;"><a href="http://hsin.hr/coci/archive/2014_2015/contest2_tasks.pdf" target="_blank" rel="noopener" style="user-select: auto;">출처</a></p>
 
