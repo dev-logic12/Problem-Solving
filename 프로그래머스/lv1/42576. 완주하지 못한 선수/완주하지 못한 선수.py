@@ -1,8 +1,5 @@
-def solution(partcipant, completion):
-    partcipant.sort()
-    completion.sort()
+import collections
 
-    for i in range(len(completion)):
-        if partcipant[i] != completion[i]:
-            return partcipant[i]
-    return partcipant[-1]
+def solution(participant, completion):
+    answer = collections.Counter(participant)- collections.Counter(completion)
+    return list(answer.keys())[0]
