@@ -1,1 +1,2 @@
-solution = lambda numbers: sum(numbers)/len(numbers)
+def solution(numbers):
+  return sum(numbers) / len(numbers)
