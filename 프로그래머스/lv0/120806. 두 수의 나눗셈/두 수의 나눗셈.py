@@ -1,1 +1,2 @@
-solution = lambda x, y: int(x/y*1000)
+def solution(num1, num2):
+  return int((num1/num2)*1000)
