@@ -1,1 +1,2 @@
-solution = lambda age: 2022-age+1
+def solution(age):
+    return (2022-age)+1
