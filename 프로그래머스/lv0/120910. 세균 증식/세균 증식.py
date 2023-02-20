@@ -1,2 +1,2 @@
-def solution(n, t):
-    return n << t
+def solution(n,t): 
+  return (2**t)*n
