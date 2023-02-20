@@ -1,1 +1,3 @@
-solution = lambda array : sorted(array)[len(array)//2]
+def solution(n):
+  n.sort()
+  return n[len(n)//2]
