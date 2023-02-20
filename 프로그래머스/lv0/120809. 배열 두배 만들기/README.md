@@ -1,6 +1,6 @@
 # [level 0] 배열 두배 만들기 - 120809 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120809?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120809) 
 
 ### 성능 요약
 
