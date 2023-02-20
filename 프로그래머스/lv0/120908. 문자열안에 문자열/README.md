@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 10.3 MB, 시간: 0.00 ms
+메모리: 10.1 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -25,6 +25,7 @@
 <ul style="user-select: auto;">
 <li style="user-select: auto;">1 ≤ <code style="user-select: auto;">str1</code>의 길이 ≤ 100</li>
 <li style="user-select: auto;">1 ≤ <code style="user-select: auto;">str2</code>의 길이 ≤ 100</li>
+<li style="user-select: auto;">문자열은 알파벳 대문자, 소문자, 숫자로 구성되어 있습니다.</li>
 </ul>
 
 <hr style="user-select: auto;">
@@ -47,6 +48,11 @@
 <td style="user-select: auto;">"pppp"</td>
 <td style="user-select: auto;">2</td>
 </tr>
+<tr style="user-select: auto;">
+<td style="user-select: auto;">"AbcAbcA"</td>
+<td style="user-select: auto;">"AAA"</td>
+<td style="user-select: auto;">2</td>
+</tr>
 </tbody>
       </table>
 <hr style="user-select: auto;">
@@ -63,6 +69,12 @@
 
 <ul style="user-select: auto;">
 <li style="user-select: auto;">"ppprrrogrammers" <code style="user-select: auto;">str1</code>에 <code style="user-select: auto;">str2</code>가 없으므로 2를 return합니다.</li>
+</ul>
+
+<p style="user-select: auto;">입출력 예 #3</p>
+
+<ul style="user-select: auto;">
+<li style="user-select: auto;">"AbcAbcA" <code style="user-select: auto;">str1</code>에 <code style="user-select: auto;">str2</code>가 없으므로 2를 return합니다.</li>
 </ul>
 
 
