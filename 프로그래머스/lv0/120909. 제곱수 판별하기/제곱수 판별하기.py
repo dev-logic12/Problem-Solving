@@ -1,5 +1,7 @@
 def solution(n):
-    if n // n**(1/2) == n**(1/2):
+    if n == 1:
         return 1
-    else: 
-        return 2
+    for i in range(1, int(n**0.5)+1):
+        if n == i**2:
+            return 1
+    return 2
