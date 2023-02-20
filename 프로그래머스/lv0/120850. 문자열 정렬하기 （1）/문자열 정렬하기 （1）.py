@@ -1,2 +1,7 @@
 def solution(my_string):
-    return sorted(int(i) for i in my_string if i.isdigit())
+  answer = []
+  for i in range(len(my_string)):
+    if my_string[i].isdigit() == True: 
+      answer.append(int(my_string[i]))
+  answer.sort()
+  return answer
