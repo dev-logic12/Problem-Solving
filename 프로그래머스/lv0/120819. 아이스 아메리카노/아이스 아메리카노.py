@@ -1,3 +1,4 @@
-solution = lambda money: [int(money)//5500, int(money)%5500]
-
-
+def solution(money):
+  a = money // 5500 
+  b = money % 5500
+  return [a, b]
