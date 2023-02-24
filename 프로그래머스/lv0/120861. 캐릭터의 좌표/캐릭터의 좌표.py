@@ -1,19 +1,18 @@
-
 def solution(keyinput, board):
-    answer = []
-    x = 0
-    y = 0
-    for i in keyinput:
-        if i == 'right':
-            x +=1
-        elif i == 'left':
-            x -=1
-        elif i == 'up':
-            y += 1
-        elif i == 'down':
-            y -= 1
-        if abs(x) >= (board[0] // 2):
-            x = (x // abs(x)) * (board[0] // 2)
-        if abs(y) >= (board[1] // 2):
-            y = (y // abs(y)) * (board[1] // 2)
-    return [x, y]
+  answer = []
+  limit_x = (board[0]//2)
+  limit_y = (board[1]//2)
+
+  commands = {
+      'up': [0,1], 
+      'down':[0,-1], 
+      'left':[-1,0], 
+      'right':[1,0]
+  }
+  x = y = 0 
+  for command in keyinput:
+    dx, dy = commands[command]
+    nx, ny = x+dx, y+dy
+    if abs(nx) <= limit_x and abs(ny) <= limit_y:
+      x, y = nx, ny
+  return [x, y]
