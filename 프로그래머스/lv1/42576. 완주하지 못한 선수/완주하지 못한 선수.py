@@ -1,5 +1,9 @@
-import collections
+from collections import Counter  
 
 def solution(participant, completion):
-    answer = collections.Counter(participant)- collections.Counter(completion)
-    return list(answer.keys())[0]
+    return list((Counter(participant)- Counter(completion)).keys())[0]
+
+
+
+
+# list((Counter(participant) - Counter(completion)).keys())[0]
