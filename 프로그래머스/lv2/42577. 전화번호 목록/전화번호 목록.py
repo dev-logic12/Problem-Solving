@@ -1,8 +1,8 @@
 def solution(phoneBook):
     phoneBook = sorted(phoneBook)
 
-    for p1, p2 in zip(phoneBook, phoneBook[1:]):
-        if p2.startswith(p1):
+    for phone1, phone2 in zip(phoneBook, phoneBook[1:]):
+        if phone2.startswith(phone1):
             return False
     return True
 
