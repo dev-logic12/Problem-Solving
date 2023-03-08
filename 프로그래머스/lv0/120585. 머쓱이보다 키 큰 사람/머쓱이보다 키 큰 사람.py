@@ -1,1 +1,5 @@
-solution = lambda array, height: len(list(filter(lambda v: v > height, array)))
+def solution(array, height):
+    array.append(height)
+    array.sort(reverse=True)
+    return array.index(height)
+
