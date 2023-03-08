@@ -1,3 +1,4 @@
-def solution(n):
-  n.sort()
-  return n[len(n)//2]
+def solution(array):
+    answer = sorted(array)
+    length = len(array) //2 
+    return answer[length]

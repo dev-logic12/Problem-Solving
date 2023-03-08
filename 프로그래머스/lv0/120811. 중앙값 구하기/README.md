@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.00 ms
+메모리: 9.99 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,51 +16,51 @@
 
 ### 문제 설명
 
-<p style="user-select: auto;">중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 <code style="user-select: auto;">array</code>가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.</p>
+<p>중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 정수 배열 <code>array</code>가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.</p>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">제한사항</h5>
+<h5>제한사항</h5>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;"><code style="user-select: auto;">array</code>의 길이는 홀수입니다.</li>
-<li style="user-select: auto;">0 &lt; <code style="user-select: auto;">array</code>의 길이 &lt; 100</li>
-<li style="user-select: auto;">-1,000 &lt; <code style="user-select: auto;">array</code>의 원소 &lt; 1,000</li>
+<ul>
+<li><code>array</code>의 길이는 홀수입니다.</li>
+<li>0 &lt; <code>array</code>의 길이 &lt; 100</li>
+<li>-1,000 &lt; <code>array</code>의 원소 &lt; 1,000</li>
 </ul>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예</h5>
-<table class="table" style="user-select: auto;">
-        <thead style="user-select: auto;"><tr style="user-select: auto;">
-<th style="user-select: auto;">array</th>
-<th style="user-select: auto;">result</th>
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>array</th>
+<th>result</th>
 </tr>
 </thead>
-        <tbody style="user-select: auto;"><tr style="user-select: auto;">
-<td style="user-select: auto;">[1, 2, 7, 10, 11]</td>
-<td style="user-select: auto;">7</td>
+        <tbody><tr>
+<td>[1, 2, 7, 10, 11]</td>
+<td>7</td>
 </tr>
-<tr style="user-select: auto;">
-<td style="user-select: auto;">[9, -1, 0]</td>
-<td style="user-select: auto;">0</td>
+<tr>
+<td>[9, -1, 0]</td>
+<td>0</td>
 </tr>
 </tbody>
       </table>
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예 설명</h5>
+<h5>입출력 예 설명</h5>
 
-<p style="user-select: auto;">입출력 예 #1</p>
+<p>입출력 예 #1</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">본문과 동일합니다.</li>
+<ul>
+<li>본문과 동일합니다.</li>
 </ul>
 
-<p style="user-select: auto;">입출력 예 #2</p>
+<p>입출력 예 #2</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">9, -1, 0을 오름차순 정렬하면 -1, 0, 9이고 가장 중앙에 위치하는 값은 0입니다.</li>
+<ul>
+<li>9, -1, 0을 오름차순 정렬하면 -1, 0, 9이고 가장 중앙에 위치하는 값은 0입니다.</li>
 </ul>
 
 
