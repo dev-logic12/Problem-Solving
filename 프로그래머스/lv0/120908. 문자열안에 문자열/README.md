@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.00 ms
+메모리: 9.93 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,65 +16,65 @@
 
 ### 문제 설명
 
-<p style="user-select: auto;">문자열 <code style="user-select: auto;">str1</code>, <code style="user-select: auto;">str2</code>가 매개변수로 주어집니다. <code style="user-select: auto;">str1</code> 안에 <code style="user-select: auto;">str2</code>가 있다면 1을 없다면 2를 return하도록 solution 함수를 완성해주세요.</p>
+<p>문자열 <code>str1</code>, <code>str2</code>가 매개변수로 주어집니다. <code>str1</code> 안에 <code>str2</code>가 있다면 1을 없다면 2를 return하도록 solution 함수를 완성해주세요.</p>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">제한사항</h5>
+<h5>제한사항</h5>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">1 ≤ <code style="user-select: auto;">str1</code>의 길이 ≤ 100</li>
-<li style="user-select: auto;">1 ≤ <code style="user-select: auto;">str2</code>의 길이 ≤ 100</li>
-<li style="user-select: auto;">문자열은 알파벳 대문자, 소문자, 숫자로 구성되어 있습니다.</li>
+<ul>
+<li>1 ≤ <code>str1</code>의 길이 ≤ 100</li>
+<li>1 ≤ <code>str2</code>의 길이 ≤ 100</li>
+<li>문자열은 알파벳 대문자, 소문자, 숫자로 구성되어 있습니다.</li>
 </ul>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예</h5>
-<table class="table" style="user-select: auto;">
-        <thead style="user-select: auto;"><tr style="user-select: auto;">
-<th style="user-select: auto;">str1</th>
-<th style="user-select: auto;">str2</th>
-<th style="user-select: auto;">result</th>
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>str1</th>
+<th>str2</th>
+<th>result</th>
 </tr>
 </thead>
-        <tbody style="user-select: auto;"><tr style="user-select: auto;">
-<td style="user-select: auto;">"ab6CDE443fgh22iJKlmn1o"</td>
-<td style="user-select: auto;">"6CD"</td>
-<td style="user-select: auto;">1</td>
+        <tbody><tr>
+<td>"ab6CDE443fgh22iJKlmn1o"</td>
+<td>"6CD"</td>
+<td>1</td>
 </tr>
-<tr style="user-select: auto;">
-<td style="user-select: auto;">"ppprrrogrammers"</td>
-<td style="user-select: auto;">"pppp"</td>
-<td style="user-select: auto;">2</td>
+<tr>
+<td>"ppprrrogrammers"</td>
+<td>"pppp"</td>
+<td>2</td>
 </tr>
-<tr style="user-select: auto;">
-<td style="user-select: auto;">"AbcAbcA"</td>
-<td style="user-select: auto;">"AAA"</td>
-<td style="user-select: auto;">2</td>
+<tr>
+<td>"AbcAbcA"</td>
+<td>"AAA"</td>
+<td>2</td>
 </tr>
 </tbody>
       </table>
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예 설명</h5>
+<h5>입출력 예 설명</h5>
 
-<p style="user-select: auto;">입출력 예 #1</p>
+<p>입출력 예 #1</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">"ab<code style="user-select: auto;">6CD</code>E443fgh22iJKlmn1o" <code style="user-select: auto;">str1</code>에 <code style="user-select: auto;">str2</code>가 존재하므로 1을 return합니다.</li>
+<ul>
+<li>"ab<code>6CD</code>E443fgh22iJKlmn1o" <code>str1</code>에 <code>str2</code>가 존재하므로 1을 return합니다.</li>
 </ul>
 
-<p style="user-select: auto;">입출력 예 #2</p>
+<p>입출력 예 #2</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">"ppprrrogrammers" <code style="user-select: auto;">str1</code>에 <code style="user-select: auto;">str2</code>가 없으므로 2를 return합니다.</li>
+<ul>
+<li>"ppprrrogrammers" <code>str1</code>에 <code>str2</code>가 없으므로 2를 return합니다.</li>
 </ul>
 
-<p style="user-select: auto;">입출력 예 #3</p>
+<p>입출력 예 #3</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">"AbcAbcA" <code style="user-select: auto;">str1</code>에 <code style="user-select: auto;">str2</code>가 없으므로 2를 return합니다.</li>
+<ul>
+<li>"AbcAbcA" <code>str1</code>에 <code>str2</code>가 없으므로 2를 return합니다.</li>
 </ul>
 
 
