@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 10.3 MB, 시간: 0.02 ms
+메모리: 10.4 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,49 +16,49 @@
 
 ### 문제 설명
 
-<p style="user-select: auto;">정수 <code style="user-select: auto;">n</code>이 매개변수로 주어질 때 <code style="user-select: auto;">n</code>의 각 자리 숫자의 합을 return하도록 solution 함수를 완성해주세요</p>
+<p>정수 <code>n</code>이 매개변수로 주어질 때 <code>n</code>의 각 자리 숫자의 합을 return하도록 solution 함수를 완성해주세요</p>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">제한사항</h5>
+<h5>제한사항</h5>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">0 ≤ <code style="user-select: auto;">n</code> ≤ 1,000,000</li>
+<ul>
+<li>0 ≤ <code>n</code> ≤ 1,000,000</li>
 </ul>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예</h5>
-<table class="table" style="user-select: auto;">
-        <thead style="user-select: auto;"><tr style="user-select: auto;">
-<th style="user-select: auto;">n</th>
-<th style="user-select: auto;">result</th>
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>n</th>
+<th>result</th>
 </tr>
 </thead>
-        <tbody style="user-select: auto;"><tr style="user-select: auto;">
-<td style="user-select: auto;">1234</td>
-<td style="user-select: auto;">10</td>
+        <tbody><tr>
+<td>1234</td>
+<td>10</td>
 </tr>
-<tr style="user-select: auto;">
-<td style="user-select: auto;">930211</td>
-<td style="user-select: auto;">16</td>
+<tr>
+<td>930211</td>
+<td>16</td>
 </tr>
 </tbody>
       </table>
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예 설명</h5>
+<h5>입출력 예 설명</h5>
 
-<p style="user-select: auto;">입출력 예 #1</p>
+<p>입출력 예 #1</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">1 + 2 + 3 + 4 = 10을 return합니다.</li>
+<ul>
+<li>1 + 2 + 3 + 4 = 10을 return합니다.</li>
 </ul>
 
-<p style="user-select: auto;">입출력 예 #2</p>
+<p>입출력 예 #2</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;">9 + 3 + 0 + 2 + 1 + 1 = 16을 return합니다.</li>
+<ul>
+<li>9 + 3 + 0 + 2 + 1 + 1 = 16을 return합니다.</li>
 </ul>
 
 
