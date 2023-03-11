@@ -1,5 +1,11 @@
+'''
+긴거 빅에 넣고
+짧은거 스몰에 넣고 
+각 맥스를 곱하기 
+'''
+
 def solution(sizes):
-    answer = []
+    answer = 0
     big = []
     small = []
     for i in range(len(sizes)):
@@ -9,5 +15,5 @@ def solution(sizes):
         else:
             big.append(sizes[i][1])
             small.append(sizes[i][0])
-    
-    return max(big)* max(small)
+    answer = max(big) * max(small)
+    return answer
