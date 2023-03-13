@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 27.7 MB, 시간: 0.01 ms
+메모리: 10 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,69 +16,69 @@
 
 ### 문제 설명
 
-<p style="user-select: auto;">정수 배열 <code style="user-select: auto;">num_list</code>와 정수&nbsp;<code style="user-select: auto;">n</code>이 매개변수로 주어집니다. <code style="user-select: auto;">num_list</code>를 다음 설명과 같이 2차원 배열로 바꿔 return하도록 solution 함수를 완성해주세요.</p>
+<p>정수 배열 <code>num_list</code>와 정수&nbsp;<code>n</code>이 매개변수로 주어집니다. <code>num_list</code>를 다음 설명과 같이 2차원 배열로 바꿔 return하도록 solution 함수를 완성해주세요.</p>
 
-<p style="user-select: auto;"><code style="user-select: auto;">num_list</code>가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 <code style="user-select: auto;">n</code>이 2이므로 <code style="user-select: auto;">num_list</code>를 2 * 4 배열로 다음과 같이 변경합니다. 2차원으로 바꿀 때에는 num_list의 원소들을 앞에서부터 n개씩 나눠 2차원 배열로 변경합니다.</p>
-<table class="table" style="user-select: auto;">
-        <thead style="user-select: auto;"><tr style="user-select: auto;">
-<th style="user-select: auto;">num_list</th>
-<th style="user-select: auto;">n</th>
-<th style="user-select: auto;">result</th>
+<p><code>num_list</code>가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 <code>n</code>이 2이므로 <code>num_list</code>를 2 * 4 배열로 다음과 같이 변경합니다. 2차원으로 바꿀 때에는 num_list의 원소들을 앞에서부터 n개씩 나눠 2차원 배열로 변경합니다.</p>
+<table class="table">
+        <thead><tr>
+<th>num_list</th>
+<th>n</th>
+<th>result</th>
 </tr>
 </thead>
-        <tbody style="user-select: auto;"><tr style="user-select: auto;">
-<td style="user-select: auto;">[1, 2, 3, 4, 5, 6, 7, 8]</td>
-<td style="user-select: auto;">2</td>
-<td style="user-select: auto;">[[1, 2], [3, 4], [5, 6], [7, 8]]</td>
+        <tbody><tr>
+<td>[1, 2, 3, 4, 5, 6, 7, 8]</td>
+<td>2</td>
+<td>[[1, 2], [3, 4], [5, 6], [7, 8]]</td>
 </tr>
 </tbody>
       </table>
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">제한사항</h5>
+<h5>제한사항</h5>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;"><code style="user-select: auto;">num_list</code>의 길이는&nbsp;<code style="user-select: auto;">n</code>의 배 수개입니다.</li>
-<li style="user-select: auto;">0 ≤ <code style="user-select: auto;">num_list</code>의 길이 ≤ 150</li>
-<li style="user-select: auto;">2 ≤ <code style="user-select: auto;">n</code> &lt; <code style="user-select: auto;">num_list</code>의 길이</li>
+<ul>
+<li><code>num_list</code>의 길이는&nbsp;<code>n</code>의 배 수개입니다.</li>
+<li>0 ≤ <code>num_list</code>의 길이 ≤ 150</li>
+<li>2 ≤ <code>n</code> &lt; <code>num_list</code>의 길이</li>
 </ul>
 
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예</h5>
-<table class="table" style="user-select: auto;">
-        <thead style="user-select: auto;"><tr style="user-select: auto;">
-<th style="user-select: auto;">num_list</th>
-<th style="user-select: auto;">n</th>
-<th style="user-select: auto;">result</th>
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>num_list</th>
+<th>n</th>
+<th>result</th>
 </tr>
 </thead>
-        <tbody style="user-select: auto;"><tr style="user-select: auto;">
-<td style="user-select: auto;">[1, 2, 3, 4, 5, 6, 7, 8]</td>
-<td style="user-select: auto;">2</td>
-<td style="user-select: auto;">[[1, 2], [3, 4], [5, 6], [7, 8]]</td>
+        <tbody><tr>
+<td>[1, 2, 3, 4, 5, 6, 7, 8]</td>
+<td>2</td>
+<td>[[1, 2], [3, 4], [5, 6], [7, 8]]</td>
 </tr>
-<tr style="user-select: auto;">
-<td style="user-select: auto;">[100, 95, 2, 4, 5, 6, 18, 33, 948]</td>
-<td style="user-select: auto;">3</td>
-<td style="user-select: auto;">[[100, 95, 2], [4, 5, 6], [18, 33, 948]]</td>
+<tr>
+<td>[100, 95, 2, 4, 5, 6, 18, 33, 948]</td>
+<td>3</td>
+<td>[[100, 95, 2], [4, 5, 6], [18, 33, 948]]</td>
 </tr>
 </tbody>
       </table>
-<hr style="user-select: auto;">
+<hr>
 
-<h5 style="user-select: auto;">입출력 예 설명</h5>
+<h5>입출력 예 설명</h5>
 
-<p style="user-select: auto;">입출력 예 #1</p>
+<p>입출력 예 #1</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;"><code style="user-select: auto;">num_list</code>가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 <code style="user-select: auto;">n</code>이 2이므로 2 * 4 배열로 변경한 [[1, 2], [3, 4], [5, 6], [7, 8]] 을 return합니다.</li>
+<ul>
+<li><code>num_list</code>가 [1, 2, 3, 4, 5, 6, 7, 8] 로 길이가 8이고 <code>n</code>이 2이므로 2 * 4 배열로 변경한 [[1, 2], [3, 4], [5, 6], [7, 8]] 을 return합니다.</li>
 </ul>
 
-<p style="user-select: auto;">입출력 예 #2</p>
+<p>입출력 예 #2</p>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;"><code style="user-select: auto;">num_list</code>가 [100, 95, 2, 4, 5, 6, 18, 33, 948] 로 길이가 9이고 <code style="user-select: auto;">n</code>이 3이므로 3 * 3 배열로 변경한 [[100, 95, 2], [4, 5, 6], [18, 33, 948]] 을 return합니다.</li>
+<ul>
+<li><code>num_list</code>가 [100, 95, 2, 4, 5, 6, 18, 33, 948] 로 길이가 9이고 <code>n</code>이 3이므로 3 * 3 배열로 변경한 [[100, 95, 2], [4, 5, 6], [18, 33, 948]] 을 return합니다.</li>
 </ul>
 
 
