@@ -1,2 +1,5 @@
 def solution(i, j, k):
-    return str([num for num in range(i, j+1)]).count(str(k))
+    answer = 0
+    for n in range(i, j + 1):
+        answer += str(n).count(str(k))
+    return answer
