@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.15 ms
+메모리: 10.2 MB, 시간: 0.15 ms
 
 ### 구분
 
@@ -16,37 +16,37 @@
 
 ### 문제 설명
 
-<p style="user-select: auto;">정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.</p>
+<p>정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.</p>
 
-<h5 style="user-select: auto;">제한 사항</h5>
+<h5>제한 사항</h5>
 
-<ul style="user-select: auto;">
-<li style="user-select: auto;"><code style="user-select: auto;">n</code>은 0 이상 3000이하인 정수입니다.</li>
+<ul>
+<li><code>n</code>은 0 이상 3000이하인 정수입니다.</li>
 </ul>
 
-<h5 style="user-select: auto;">입출력 예</h5>
-<table class="table" style="user-select: auto;">
-        <thead style="user-select: auto;"><tr style="user-select: auto;">
-<th style="user-select: auto;">n</th>
-<th style="user-select: auto;">return</th>
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>n</th>
+<th>return</th>
 </tr>
 </thead>
-        <tbody style="user-select: auto;"><tr style="user-select: auto;">
-<td style="user-select: auto;">12</td>
-<td style="user-select: auto;">28</td>
+        <tbody><tr>
+<td>12</td>
+<td>28</td>
 </tr>
-<tr style="user-select: auto;">
-<td style="user-select: auto;">5</td>
-<td style="user-select: auto;">6</td>
+<tr>
+<td>5</td>
+<td>6</td>
 </tr>
 </tbody>
       </table>
-<h6 style="user-select: auto;">입출력 예 설명</h6>
+<h6>입출력 예 설명</h6>
 
-<p style="user-select: auto;">입출력 예 #1<br style="user-select: auto;">
+<p>입출력 예 #1<br>
 12의 약수는 1, 2, 3, 4, 6, 12입니다. 이를 모두 더하면 28입니다.</p>
 
-<p style="user-select: auto;">입출력 예 #2<br style="user-select: auto;">
+<p>입출력 예 #2<br>
 5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.</p>
 
 
