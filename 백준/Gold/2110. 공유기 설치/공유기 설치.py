@@ -1,35 +1,30 @@
-import sys
+import math,sys
 input = sys.stdin.readline
 
-n, c = map(int, input().split())
-arr = []
-for _ in range(n):
-    arr.append(int(input()))
+n,c = map(int,input().split())
+h = [int(input()) for i in range(n)]
+h.sort()
+start,end = 1, h[n-1] - h[0]
+# 집 사이의 최소 거리, 최대 거리
+result = 0
 
-arr.sort()
+if c == 2:
+    print(h[n-1] - h[0])
+    # 집이 2개라면 무조건 처음, 마지막 집 사이의 거리
+else:
+    while(start < end):
+        mid = (start + end)//2
 
-end = arr[-1] - arr[0]
-start = 1
-ans = 0
-
-while start <= end:
-    mid = (start + end) // 2
-    count = 1
-    current_router = arr[0]
-    tmp = float("INF")
-
-    for i in range(1, n):
-        if current_router + mid <= arr[i]:
-            tmp = min(arr[i] - current_router, tmp)
-            count += 1
-            current_router = arr[i]
-
-    if count < c: # 공유기 설치를 더 해야함 -> 간격을 짧게 해야 함
-        end = mid - 1
-
-    elif count >= c: # 공유기 설치가 완료 or 더 많이 됨 -> 간격 늘려야 함
-        start = mid + 1
-        ans = max(ans, tmp)
-    
-
-print(ans)
+        count = 1
+        ts = h[0]
+        # 마지막으로 설치된 공유기의 위치
+        for i in range(n):
+            if h[i] - ts >= mid:
+                count+=1
+                ts = h[i]
+        if count >= c:
+            result = mid
+            start = mid + 1
+        elif count < c:
+            end = mid
+    print(result)
