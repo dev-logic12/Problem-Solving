@@ -2,7 +2,7 @@ test = int(input())
 
 if 90 <= test:
     print('A')
-elif 80 <= test <= 89:
+elif 80<= test <= 89:
     print('B')
 elif 70 <= test <= 79:
     print('C')
