@@ -1,3 +1,5 @@
+n, m = map(int, input().split())
+def math_helper():
+    print(n * m - 1)
 
-N, M = map(int, input().split())
-print(N-1 + (M-1)*N)
+math_helper()
