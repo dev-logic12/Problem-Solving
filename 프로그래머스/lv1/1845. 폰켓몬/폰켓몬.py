@@ -1,8 +1,12 @@
+'''
+1,2,3 2 2 
+2,3,4 3 3 
+2,3 3 2 
+len(nums)//2 
+len(set(nums))
+
+'''
+
+
 def solution(nums):
-    a = len(set(nums))
-    b = len(nums)//2
-    return min(a, b)
-    # if a >= b:
-    #     return b 
-    # elif a <= b:
-    #     return a
+    return min(len(set(nums)), len(nums)//2)
