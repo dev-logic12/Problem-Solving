@@ -1,21 +1,17 @@
-import sys
+import sys 
+input_fn = sys.stdin.readline
+n, m = map(int, input_fn().split())
 
-input = sys.stdin.readline
+idx_to_name = {}
+name_to_idx = {}
+for i in range(1, n+1):
+    name = input_fn().rstrip()
+    idx_to_name[i] = name 
+    name_to_idx[name] = i
 
-n, m = map(int, input().split())
-
-dict = {}
-
-for i in range(1, n + 1):
-    a = input().rstrip()
-    #번호: 이름 저장
-    dict[i] = a
-    #이름: 번호 저장
-    dict[a] = i
-
-for i in range(m):
-    quest = input().rstrip()
-    if quest.isdigit():
-        print(dict[int(quest)])
+for _ in range(m):
+    query = input_fn().rstrip()
+    if query.isdigit():
+        print(idx_to_name[int(query)])
     else:
-        print(dict[quest])
+        print(name_to_idx[query])
