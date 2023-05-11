@@ -1,8 +1,8 @@
 def solution(strArr):
     answer = []
-    for word in strArr:
-        if 'ad' not in word:
-            answer.append(word)
+    for i in strArr:
+        if 'ad' not in i:
+            answer.append(i)
     return answer
 
 # strArr = ["and","notad","abcd"]	
