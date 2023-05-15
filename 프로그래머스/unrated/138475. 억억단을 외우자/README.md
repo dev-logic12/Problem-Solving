@@ -1,10 +1,10 @@
 # [unrated] 억억단을 외우자 - 138475 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/138475) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/138475?language=python3) 
 
 ### 성능 요약
 
-메모리: 91.5 MB, 시간: 9893.72 ms
+메모리: 91.4 MB, 시간: 7718.66 ms
 
 ### 구분
 
