@@ -1,41 +1,22 @@
-INF = 987654321
-
-def create_table():
-    arr = []
-    arr.append([i for i in range(1, 21)])
-    arr[0].append(50)
-    nxt = []
-    for i in range(1, 21):
-        for j in range(2, 4):
-            ret = i * j
-            
-            if ret > 20:
-                nxt.append(ret)
-                
-    arr.append(list(set(nxt)))
-    
-    return arr
-
 def solution(target):
-    table = create_table()
+    dp = [[float('inf'), 0] for _ in range(300000)]
 
-    dp = [[INF, 0] for _ in range(target + 1)]
+    targetList = [i + 1 for i in range(20)]
+
     dp[0][0] = 0
 
-    for i in range(1, target + 1):
-        for j in range(2):
-            for k in range(len(table[j])):
-                prev = i - table[j][k]
+    for i in range(target):
+        def check(addIdx, count):
+            if dp[i + addIdx][0] >= dp[i][0] + 1:
+                if dp[i + addIdx][0] == dp[i][0] + 1:
+                    dp[i + addIdx][1] = max(dp[i + addIdx][1], dp[i][1] + count)
+                else:
+                    dp[i + addIdx] = [dp[i][0] + 1, dp[i][1] + count]
 
-                if prev < 0:
-                    continue
+        for j in targetList:
+            for v, c in [[1, 1], [2, 0], [3, 0]]:
+                check(j * v, c)
 
-                total, valid = dp[prev][0] + 1, dp[prev][1] + 1 - j
-
-                if total < dp[i][0]:
-                    dp[i] = [total, valid]
-                    
-                elif total == dp[i][0]:
-                    dp[i] = [total, max(dp[i][1], valid)]
+        check(50, 1)
 
     return dp[target]

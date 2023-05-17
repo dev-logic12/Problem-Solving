@@ -1,10 +1,10 @@
 # [level 3] 카운트 다운 - 131129 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131129) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131129?language=python3) 
 
 ### 성능 요약
 
-메모리: 10.4 MB, 시간: 0.66 ms
+메모리: 44.8 MB, 시간: 179.68 ms
 
 ### 구분
 
