@@ -1,6 +1,5 @@
 def solution(my_string, queries):
-    for query in queries:
-        start = query[0]
-        end = query[1]
-        my_string = my_string[:start] + my_string[start:end+1][::-1] + my_string[end+1:]
-    return my_string
+    answer = list(my_string)
+    for s, e in queries:
+        answer[s:e+1] = answer[s:e+1][::-1]
+    return ''.join(answer)
