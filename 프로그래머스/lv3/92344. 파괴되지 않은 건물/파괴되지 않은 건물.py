@@ -1,30 +1,42 @@
 def solution(board, skill):
-    # 보드 크기 설정
-    R, C = len(board) + 1, len(board[0]) + 1
-    # diff 리스트 초기화
-    diff = [[0] * C for _ in range(R)]
-
-    # 각 스킬 적용
-    for t, r1, c1, r2, c2, d in skill:
-        d *= -1 if t == 1 else 1
-        set_diff(diff, r1, c1, r2, c2, d)
-
-    # diff 리스트 누적합 계산
-    for i in range(1, R):
-        diff[i][0] += diff[i - 1][0]
-        diff[0][i] += diff[0][i - 1]
-
-    # 보드의 양수 칸 개수 계산
-    ans = 0
-    for i in range(1, R):
-        for j in range(1, C):
-            diff[i][j] += diff[i - 1][j] + diff[i][j - 1] - diff[i - 1][j - 1]
-            ans += 1 if board[i - 1][j - 1] + diff[i - 1][j - 1] > 0 else 0
-    return ans
-
-def set_diff(diff, r1, c1, r2, c2, d):
-    # diff 리스트 갱신
-    diff[r1][c1] += d
-    diff[r2 + 1][c2 + 1] += d
-    diff[r2 + 1][c1] -= d
-    diff[r1][c2 + 1] -= d
+    answer = 0
+    N = len(board)
+    M = len(board[0])
+    preSum = [[0] * (M + 1) for _ in range(N + 1)]  # 누적합 배열은 크기가 1 더 큼
+    
+    for s in skill:
+        type = s[0]
+        r1, c1, r2, c2, degree = s[1], s[2], s[3], s[4], s[5]
+        
+        if type == 1:  # destroy
+            preSum[r1][c1] += -degree
+            preSum[r2 + 1][c1] += degree
+            preSum[r1][c2 + 1] += degree
+            preSum[r2 + 1][c2 + 1] += -degree
+        else:  # repair
+            preSum[r1][c1] += degree
+            preSum[r2 + 1][c1] += -degree
+            preSum[r1][c2 + 1] += -degree
+            preSum[r2 + 1][c2 + 1] += degree
+    
+    # 가로 누적합 계산
+    for i in range(N + 1):
+        sum = 0
+        for j in range(M + 1):
+            sum += preSum[i][j]
+            preSum[i][j] = sum
+    
+    # 세로 누적합 계산
+    for i in range(M):
+        sum = 0
+        for j in range(N):
+            sum += preSum[j][i]
+            preSum[j][i] = sum
+    
+    # count
+    for i in range(N):
+        for j in range(M):
+            if preSum[i][j] + board[i][j] > 0:
+                answer += 1
+    
+    return answer
