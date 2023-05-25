@@ -1,9 +1,7 @@
 def solution(str_list):
-    answer = next((i for i, s in enumerate(str_list) if s == "l" or s == "r"), -1)
-
-    if answer == -1:
-        return []
-    elif str_list[answer] == "l":
-        return str_list[:answer]
-    else:
-        return str_list[answer + 1:]
+    for i in range(len(str_list)):
+        if str_list[i] == 'l':
+            return str_list[:i]
+        elif str_list[i] == 'r':
+            return str_list[i+1:]
+    return []
