@@ -6,6 +6,6 @@ def solution(sizes):
             big.append(size[0])
             small.append(size[1])
         else:
-            small.append(size[0])
             big.append(size[1])
-    return max(small) * max(big)
+            small.append(size[0])
+    return max(big)*max(small)
