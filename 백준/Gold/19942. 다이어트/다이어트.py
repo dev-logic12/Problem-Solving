@@ -1,39 +1,33 @@
-from sys import stdin
-from itertools import combinations
+def recur(idx, p, f, c, v, price):
+    global answer, used, answer_used
 
-input = stdin.readline
+    if p >= protein and f >= fat and c >= carbo and v >= vitamin and answer > price:
+        answer = price
+        answer_used = used[:]
+
+    if idx == n:
+        return
+
+    used.append(idx + 1)
+    recur(idx + 1, p + ing[idx][0], f + ing[idx][1], c + ing[idx][2], v + ing[idx][3], price + ing[idx][4])
+    used.pop()
+    recur(idx + 1, p, f, c, v, price)
+
 
 n = int(input())
-mp,mf,ms,mv = map(int, input().split())
+protein, fat, carbo, vitamin = map(int, input().split())
+ing = [list(map(int, input().split())) for _ in range(n)]
 
-board = [[]]
-for _ in range(n):
-    p,f,s,v,c = map(int, input().split())
-    board.append((p,f,s,v,c))
+answer = float('inf')
+used = []
+answer_used = []
 
-def solution():
-    inf = 9875643210
-    answer = None
-    for cnt in range(1,n+1):
-        for comb in combinations(range(1,n+1),cnt):
-            tp=tf=ts=tv=tc=0
-            for target in comb:
-                tp += board[target][0]
-                tf += board[target][1]
-                ts += board[target][2]
-                tv += board[target][3]
-                tc += board[target][4]
+recur(0, 0, 0, 0, 0, 0)
 
-            if tp >= mp and tf >= mf and ts >= ms and tv >= mv:
-                if inf > tc:
-                    inf = tc
-                    answer = comb
-                elif inf == tc:
-                    answer = sorted((answer,comb))[0]
-    if inf == 9875643210:
-        print(-1)
-    else:
-        print(inf)
-        print(*answer)
+answer_used.sort()
 
-solution()
+if answer_used:
+    print(answer)
+    print(*answer_used)
+else:
+    print(-1)
