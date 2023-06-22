@@ -1,6 +1,6 @@
 # [unrated] 이모티콘 할인행사 - 150368 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150368?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150368) 
 
 ### 성능 요약
 
