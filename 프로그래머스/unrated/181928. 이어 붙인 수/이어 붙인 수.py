@@ -1,11 +1,11 @@
 def solution(num_list):
-    answer = 0
-    hol = ''
-    even = ''
-    for i in num_list:
-        if i %2 != 0:
-            hol += str(i) 
+    even = ""
+    odd = ""
+    for num in num_list:
+        if num % 2 == 0:
+            even += str(num)
         else:
-            even += str(i)
-    
-    return int(hol) + int(even)
+            odd += str(num)
+    even_sum = int(even) if even else 0
+    odd_sum = int(odd) if odd else 0
+    return int(odd) + int(even)
