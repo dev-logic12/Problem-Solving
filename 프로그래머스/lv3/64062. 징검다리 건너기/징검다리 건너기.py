@@ -4,26 +4,26 @@ def solution(stones, k):
     while start <= end:
         middle = (start + end)//2
 
-        max_cnt = 0
-        cnt = 0
+        max_count = 0
+        count = 0
         flag = False
         for stone in stones:
             if stone - middle <= 0:
                 if flag:
-                    cnt += 1
+                    count += 1
                 else:
-                    max_cnt = max(max_cnt, cnt)
-                    cnt = 1
+                    max_count = max(max_count, count)
+                    count = 1
                     flag = True
             else:
                 flag = False
-                         
-        max_cnt = max(max_cnt, cnt)
 
-        if max_cnt >= k:
+        max_count = max(max_count, count)
+
+        if max_count >= k:
             end = middle - 1
             answer = middle
         else:
             start = middle + 1
-    
+
     return answer
