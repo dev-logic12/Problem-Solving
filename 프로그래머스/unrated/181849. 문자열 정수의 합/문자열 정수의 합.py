@@ -1,6 +1,6 @@
 def solution(num_str):
     answer = 0
-    for i in num_str:
-        answer += int(i) 
+    for i in range(len(num_str)):
+        answer += int(num_str[i])
     return answer
-    
+
