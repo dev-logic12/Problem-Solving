@@ -1,21 +1,6 @@
 def solution(ineq, eq, n, m):
-    if ineq == '<' and eq == '=': 
-        if n <= m:
-            return 1 
-        else:
-            return 0
-    if ineq == '>' and eq == '=':
-        if n >= m:
-            return 1 
-        else:
-            return 0
-    if ineq == '>' and eq == '!':
-        if n > m:
-            return 1 
-        else:
-            return 0
-    if ineq == '<' and eq == '!':
-        if n < m:
-            return 1 
-        else:
-            return 0
+    return 1 if (ineq == '<' and eq == '=' and n <= m) else \
+           1 if (ineq == '>' and eq == '=' and n >= m) else \
+           1 if (ineq == '>' and eq == '!' and n > m) else \
+           1 if (ineq == '<' and eq == '!' and n < m) else \
+           0
