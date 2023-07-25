@@ -1,23 +1,27 @@
 def solution(distance, rocks, n):
-    answer = 0 
-    start, end = 0, distance
+    if len(rocks) == n:
+        return distance
 
     rocks.sort()
+    rocks.append(distance)
+    answer = 0
+    start, end = 0, distance
 
     while start <= end:
-        mid = (start+end) //2 
-        del_stones = 0
-        pre_stone = 0 
+        mid = (start + end) // 2
+        prev_rock = 0
+        removed_rocks = 0
+
         for rock in rocks:
-            if rock - pre_stone < mid:
-                del_stones += 1 
+            if rock - prev_rock < mid:
+                removed_rocks += 1
             else:
-                pre_stone = rock 
-            if del_stones > n:
-                break 
-        if del_stones > n:
-            end = mid -1 
+                prev_rock = rock
+
+        if removed_rocks > n:
+            end = mid - 1
         else:
-            answer = mid 
-            start = mid + 1 
-    return answer 
+            answer = mid
+            start = mid + 1
+
+    return answer
