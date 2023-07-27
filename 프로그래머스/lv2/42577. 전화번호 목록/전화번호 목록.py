@@ -1,8 +1,11 @@
+def has_prefix(phone_number, prefix):
+    return phone_number.startswith(prefix)
+
 def solution(phoneBook):
-    phoneBook = sorted(phoneBook)
+    phoneBook.sort()
 
-    for phone1, phone2 in zip(phoneBook, phoneBook[1:]):
-        if phone2.startswith(phone1):
+    for i in range(len(phoneBook) - 1):
+        if has_prefix(phoneBook[i + 1], phoneBook[i]):
             return False
-    return True
 
+    return True
