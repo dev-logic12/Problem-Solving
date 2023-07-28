@@ -1,11 +1,7 @@
 def solution(sizes):
-    big = 0
-    small = 0
+    max_length = max_width = 0
     for size in sizes:
-        if size[0] >= size[1]: 
-            big = max(big, size[0])
-            small = max(small, size[1])
-        else:
-            big = max(big, size[1])
-            small = max(small, size[0])
-    return big*small
+        max_length = max(max_length, max(size))
+        max_width = max(max_width, min(size))
+
+    return max_length * max_width
