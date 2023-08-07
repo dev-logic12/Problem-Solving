@@ -1,9 +1,9 @@
 def solution(sizes):
-    row = 0
-    col = 0
-    for a, b in sizes:
-        if a < b:
-            a, b = b, a
-        row = max(row, a)
-        col = max(col, b)
-    return row * col
+    row = 0 
+    col = 0 
+    for r, c in sizes:
+        if r < c:
+            r, c = c, r 
+        row = max(row, r)
+        col = max(col, c)
+    return row*col
