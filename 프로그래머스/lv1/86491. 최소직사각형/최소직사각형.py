@@ -1,9 +1,10 @@
 def solution(sizes):
-    row = 0 
-    col = 0 
-    for r, c in sizes:
-        if r < c:
-            r, c = c, r 
-        row = max(row, r)
-        col = max(col, c)
-    return row*col
+    height = 0 
+    vertical = 0 
+    for h, v in sizes:
+        if h < v:
+            h, v = v, h
+        height = max(height, h)
+        vertical = max(vertical, v)
+    return height*vertical
+
