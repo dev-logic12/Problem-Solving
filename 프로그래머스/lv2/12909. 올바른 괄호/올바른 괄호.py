@@ -1,6 +1,7 @@
 def solution(s):
-    pair = 0
-    for x in s:
-        if pair < 0: break
-        pair = pair + 1 if x == "(" else pair - 1
-    return pair == 0
+    answer = 0
+    for c in s :
+        if c == '(' : answer += 1
+        elif c == ')' : answer -= 1
+        if answer < 0 : return False
+    return answer == 0
