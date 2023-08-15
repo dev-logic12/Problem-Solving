@@ -1,20 +1,15 @@
 def solution(n, lost, reserve):
-    answer = [1]*(n+2)
-    cnt = 0 
-    for i in range(1, n+1):
-        if i in lost:
-            answer[i] -= 1
-        if i in reserve:
-            answer[i] += 1 
-    for i in range(1, n+1):
-        if answer[i] == 2:
-            if answer[i-1] == 0:
-                answer[i] -= 1 
-                answer[i-1] += 1
-            elif answer[i+1] == 0:
-                answer[i] -= 1 
-                answer[i+1] += 1 
-    for i in range(1, n+1):
-        if answer[i] >= 1:
-            cnt += 1 
-    return cnt
+    _reserve = [r for r in reserve if r not in lost]
+    _lost = [l for l in lost if l not in reserve]
+    
+    _reserve.sort()
+    _lost.sort()
+    
+    for r in _reserve:
+        f = r - 1
+        b = r + 1
+        if f in _lost:
+            _lost.remove(f)
+        elif b in _lost:
+            _lost.remove(b)
+    return n - len(_lost)
