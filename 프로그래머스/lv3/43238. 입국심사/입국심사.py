@@ -1,20 +1,11 @@
 def solution(n, times):
-    left, right = 1, max(times) * n
-    answer = right
-
-    while left <= right:
-        mid = (left + right) // 2
-        people = 0
-
-        for time in times:
-            people += mid // time
-            if people >= n:
-                break
-
-        if people >= n:
-            answer = min(answer, mid)
-            right = mid - 1
+    max_ = min(times)*n
+    min_ = 1
+    while min_+1 != max_:
+        search = (max_+min_)//2
+        done = sum([search//t for t in times])
+        if done >= n:
+            max_ = search
         else:
-            left = mid + 1
-
-    return answer
+            min_ = search
+    return max_    
