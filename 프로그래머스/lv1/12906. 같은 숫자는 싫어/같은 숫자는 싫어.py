@@ -1,2 +1,7 @@
 def solution(arr):
-    return  [arr[i] for i in range(len(arr)) if not(arr[i:i+1] == arr[i+1:i+2])]
+    answer = [arr[0]]
+    for a in arr:
+        if not a == answer[-1]:
+            answer.append(a)
+
+    return answer
