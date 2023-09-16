@@ -1,12 +1,8 @@
 def solution(order):
     answer = 0
-    cheap = ['iceamericano', 'americanoice', 'hotamericano', 'americanohot', 'americano', 'anything']
-    expensive = ['icecafelatte', 'cafelatteice', 'hotcafelatte', 'cafelattehot', 'cafelatte']
-    
-    for menu in order:
-        if menu in cheap:
-            answer += 4500
-        elif menu in expensive:
-            answer += 5000
+    for i in order:
+        if 'latte' in i:
+            answer += 500
+        answer += 4500
     
     return answer
