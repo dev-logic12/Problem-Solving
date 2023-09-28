@@ -3,5 +3,5 @@ def solution(chicken):
     while chicken >= 10:
         chicken, mod = divmod(chicken, 10)
         answer += chicken
-        chicken += mod
+        chicken += mod 
     return answer 
