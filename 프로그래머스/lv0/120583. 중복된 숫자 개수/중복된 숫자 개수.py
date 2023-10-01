@@ -1,2 +1,3 @@
 def solution(array, n):
-    return array.count(n)
+    answer = array.count(n)
+    return answer
