@@ -1,11 +1,10 @@
 def solution(price):
-    answer = 0
     if price >= 500000:
-        answer = int(price*0.8)
+        answer = price * .80
     elif price >= 300000:
-        answer = int(price*0.9)
+        answer = price * .90
     elif price >= 100000:
-        answer = int(price*0.95)
+        answer = price * .95
     else:
         answer = price
-    return answer
+    return int(answer)
