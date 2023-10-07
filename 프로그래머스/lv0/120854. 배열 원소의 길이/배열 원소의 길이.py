@@ -1,2 +1,5 @@
 def solution(strlist):
-    return list(map(len, strlist))
+    answer = []
+    for i in strlist:
+        answer.append(len(str(i)))
+    return answer
