@@ -1,10 +1,10 @@
-# [unrated] 최빈값 구하기 - 120812 
+# [level unrated] 최빈값 구하기 - 120812 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120812?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120812) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.01 ms
+메모리: 9.97 MB, 시간: 0.06 ms
 
 ### 구분
 
@@ -12,7 +12,11 @@
 
 ### 채점결과
 
-<br/>정확성: 100.0<br/>합계: 100.0 / 100.0
+정확성: 100.0<br/>합계: 100.0 / 100.0
+
+### 제출 일자
+
+2023년 10월 1일 17:30:19
 
 ### 문제 설명
 
@@ -24,7 +28,7 @@
 
 <ul>
 <li>0 &lt; <code>array</code>의 길이 &lt; 100</li>
-<li>-1000 &lt; <code>array</code>의 원소 &lt; 1000</li>
+<li>0&nbsp;≤&nbsp;<code>array</code>의 원소 &lt; 1000</li>
 </ul>
 
 <hr>
@@ -72,5 +76,9 @@
 <li>[1]에는 1만 있으므로 최빈값은 1입니다.</li>
 </ul>
 
+<hr>
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+<p>※ 공지 - 2022년 10월 17일 제한 사항 및 테스트케이스가 수정되었습니다.</p>
+
+
+> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
