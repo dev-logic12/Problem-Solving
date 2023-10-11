@@ -1,10 +1,10 @@
-# [unrated] 배열 두배 만들기 - 120809 
+# [level unrated] 배열 두배 만들기 - 120809 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120809) 
 
 ### 성능 요약
 
-메모리: 75 MB, 시간: 0.03 ms
+메모리: 10.3 MB, 시간: 0.07 ms
 
 ### 구분
 
@@ -12,7 +12,11 @@
 
 ### 채점결과
 
-<br/>정확성: 100.0<br/>합계: 100.0 / 100.0
+정확성: 100.0<br/>합계: 100.0 / 100.0
+
+### 제출 일자
+
+2023년 10월 3일 22:32:37
 
 ### 문제 설명
 
@@ -63,4 +67,4 @@
 </ul>
 
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
