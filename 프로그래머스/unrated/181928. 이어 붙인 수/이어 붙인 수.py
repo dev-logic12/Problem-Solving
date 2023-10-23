@@ -1,9 +1,11 @@
 def solution(num_list):
-    even = ''
-    odd = ''
-    for num in num_list:
-        if num%2 == 0:
-            even += str(num)
+    hol = []
+    zzak = []
+    for i in num_list:
+        if i % 2 != 0:
+            hol.append(str(i))
         else:
-            odd += str(num)
-    return int(even) + int(odd)
+            zzak.append(str(i))
+    return int(''.join(hol)) + int(''.join(zzak))
+
+
