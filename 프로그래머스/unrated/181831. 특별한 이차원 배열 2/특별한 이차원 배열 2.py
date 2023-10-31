@@ -1,8 +1,7 @@
 def solution(arr):
-    n = len(arr)
-    
-    for i in range(n):
-        for j in range(n):
+    answer = 0
+    for i in range(len(arr)):
+        for j in range(len(arr)):
             if arr[i][j] != arr[j][i]:
-                return 0 
-        return 1 
+                return 0
+    return 1
