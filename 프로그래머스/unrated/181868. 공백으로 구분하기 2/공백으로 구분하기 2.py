@@ -1,4 +1,7 @@
 def solution(my_string):
-    words = my_string.split()
-    return words
-
+    answer = my_string.split(' ')
+    answer1 = []
+    for i in answer:
+        if i != '':
+            answer1.append(i)
+    return answer1
