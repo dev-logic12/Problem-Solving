@@ -1,7 +1,6 @@
 def solution(num_list):
-    answer = num_list
-    if int(num_list[-1]) > int(num_list[-2]):
-        answer.append(int(num_list[-1]) - int(num_list[-2]))
+    if num_list[-1] > num_list[-2]:
+        num_list.append(int(num_list[-1]-num_list[-2]))
     else:
-        answer.append(int(num_list[-1]*2))
-    return answer
+        num_list.append(int(num_list[-1]*2))
+    return num_list
