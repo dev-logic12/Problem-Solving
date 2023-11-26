@@ -1,3 +1,4 @@
 def solution(a, b):
-    answer = 0
-    return max(int(str(a)+str(b)), int(str(b)+str(a)))
+    answer = int(str(a)+str(b))
+    answer1 = int(str(b)+str(a))
+    return answer if answer>answer1 else answer1
