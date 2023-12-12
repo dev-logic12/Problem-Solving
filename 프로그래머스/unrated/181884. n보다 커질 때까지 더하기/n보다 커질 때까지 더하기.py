@@ -1,6 +1,8 @@
 def solution(numbers, n):
-    answer = 0
-    for i in numbers:
-        answer += i 
-        if answer > n:
-            return answer
+    current_sum = 0
+
+    for num in numbers:
+        current_sum += num
+
+        if current_sum > n:
+            return current_sum
