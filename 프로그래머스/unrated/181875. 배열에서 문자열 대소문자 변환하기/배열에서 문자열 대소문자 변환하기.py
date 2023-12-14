@@ -1,11 +1,8 @@
 def solution(strArr):
     answer = []
-    for i in strArr:   
-        if i in strArr[0::2]:
-            answer.append(i.lower())
+    for i, s in enumerate(strArr):
+        if i % 2 == 0:
+            answer.append(s.lower())
         else:
-            answer.append(i.upper())
+            answer.append(s.upper())
     return answer
-
-strArr = ["AAA","BBB","CCC","DDD"]	
-print(solution(strArr))
