@@ -1,2 +1,1 @@
-def solution(n):
-    return str(n)
+solution = lambda n : str(n)
