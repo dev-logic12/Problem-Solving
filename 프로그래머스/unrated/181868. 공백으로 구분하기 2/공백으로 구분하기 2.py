@@ -1,3 +1,3 @@
 def solution(my_string):
-    return [i for i in my_string.split(' ') if i != '']
-
+    answer = my_string.split()
+    return answer
