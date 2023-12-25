@@ -1,17 +1,12 @@
 def solution(arr):
-    row = len(arr)
-    col = len(arr[0])
-
-    if row > col:
-        diff = row - col
-        for i in range(row):
-            for _ in range(diff):
+    n=len(arr)
+    m=len(arr[0])
+    if n>m:
+        for i in range(n):
+            for j in range(n-m):
                 arr[i].append(0)
-
-    elif col > row:
-        diff = col - row
-        for _ in range(diff):
-            arr.append([0] * col)
+    else:
+        for i in range(m-n):
+            arr.append([0]*m)
 
     return arr
-
