@@ -1,5 +1,5 @@
 def solution(arr):
     answer = []
-    for num in arr:
-        answer += [num]*num
+    for i in arr:
+        answer.extend([i]*int(i))
     return answer
