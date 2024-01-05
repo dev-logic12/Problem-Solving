@@ -1,6 +1,2 @@
 def solution(my_string, index_list):
-    answer = ''
-    for index in index_list:
-        if index < len(my_string):
-            answer += my_string[index]
-    return answer
+    return ''.join([my_string[idx] for idx in index_list])
