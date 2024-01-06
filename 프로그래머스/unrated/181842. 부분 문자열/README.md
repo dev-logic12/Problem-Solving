@@ -1,10 +1,10 @@
 # [level unrated] 부분 문자열 - 181842 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181842) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181842?language=javascript) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.00 ms
+메모리: 33.5 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 0일 16:8:45
+2024년 1월 6일 20:9:59
 
 ### 문제 설명
 
