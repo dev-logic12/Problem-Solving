@@ -1,6 +1,6 @@
 # [level 0] 원소들의 곱과 합 - 181929 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181929?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181929) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 1월 0일 20:46:58
+2024년 1월 0일 20:47:45
 
 ### 문제 설명
 
