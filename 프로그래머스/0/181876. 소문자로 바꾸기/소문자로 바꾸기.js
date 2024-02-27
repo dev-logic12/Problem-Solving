@@ -1,3 +1,4 @@
 function solution(myString) {
-    return myString.toLowerCase();
+    var answer = myString.toLowerCase();
+    return answer;
 }
