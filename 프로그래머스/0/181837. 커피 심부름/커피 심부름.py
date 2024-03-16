@@ -1,2 +1,7 @@
 def solution(order):
-    return sum([5000 if "cafelatte" in i else 4500 for i in order])
+    answer=0
+    for i in order:
+        if "latte" in i: 
+            answer+=5000
+        else: answer+=4500
+    return answer
