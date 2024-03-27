@@ -1,6 +1,6 @@
 # [level 0] n보다 커질 때까지 더하기 - 181884 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181884?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181884) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 11일 22:25:01
+2024년 03월 27일 18:15:50
 
 ### 문제 설명
 
