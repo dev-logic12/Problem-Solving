@@ -1,12 +1,1 @@
-function solution(arr, k) {
-    let answer = [];
-
-    for(n of arr) {
-        if(k % 2 === 0) {
-            answer.push(n+k)
-        } else {
-            answer.push(n*k)
-        }
-    }
-    return answer;
-}
+const solution = (arr, k) => arr.map(v => k % 2 ? v * k : v + k)
