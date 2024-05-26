@@ -1,2 +1,6 @@
 def solution(start, end):
-    return list(range(start,end-1,-1))
+    answer = []
+    while start>=end:
+        answer.append(start)
+        start-=1        
+    return answer
