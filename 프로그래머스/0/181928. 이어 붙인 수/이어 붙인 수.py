@@ -1,10 +1,10 @@
 def solution(num_list):
     answer = 0
-    hol=""
-    zzak=""
+    a = ""
+    b = ""
     for i in num_list:
-        if i%2!=0:
-            hol+=str(i)
+        if i % 2 != 0:
+            a += str(i)
         else:
-            zzak+=str(i)
-    return int(hol)+int(zzak)
+            b += str(i)
+    return int(a)+int(b)
