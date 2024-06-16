@@ -1,10 +1,10 @@
 # [level 0] 첫 번째로 나오는 음수 - 181896 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181896?language=c) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181896) 
 
 ### 성능 요약
 
-메모리: 4.2 MB, 시간: 0.01 ms
+메모리: 10.1 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 20일 22:33:18
+2024년 06월 16일 23:52:13
 
 ### 문제 설명
 
