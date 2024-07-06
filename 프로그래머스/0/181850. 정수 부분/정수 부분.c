@@ -3,6 +3,6 @@
 #include <stdlib.h>
 
 int solution(double flo) {
-    int answer = (int)flo;
+    int answer = flo/1;
     return answer;
 }
