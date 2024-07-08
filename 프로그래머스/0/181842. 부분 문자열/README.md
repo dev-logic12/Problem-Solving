@@ -1,6 +1,6 @@
 # [level 0] 부분 문자열 - 181842 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181842?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181842) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 06월 30일 23:49:26
+2024년 07월 08일 13:57:06
 
 ### 문제 설명
 
