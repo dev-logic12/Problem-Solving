@@ -1,12 +1,12 @@
 def solution(arr):
-    n = len(arr)
-    m = len(arr[0])
+    rows = len(arr)
+    cols = len(arr[0]) if rows > 0 else 0
     
-    if n > m:
-        for row in arr:
-            row.extend([0] * (n - m))
-    else:
-        for _ in range(m - n):
-            arr.append([0] * m)
+    if rows > cols:
+        for i in range(rows):
+            arr[i].extend([0] * (rows - cols))
+    elif cols > rows:
+        for i in range(cols - rows):
+            arr.append([0] * cols)
     
     return arr
