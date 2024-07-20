@@ -1,4 +1,7 @@
 function solution(number, n, m) {
-  return (number%n === 0) ? (number%m === 0) ? 1 : 0 : 0 ;
-}
 
+    if(number % n === 0 && number % m === 0) {
+        return 1;
+    }
+    return 0;
+}
