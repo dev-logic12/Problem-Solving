@@ -1,2 +1,2 @@
 def solution(names):
-    return names[::5]
+    return names[0::5]
