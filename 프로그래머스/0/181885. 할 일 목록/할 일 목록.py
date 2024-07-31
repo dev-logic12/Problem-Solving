@@ -1,6 +1,6 @@
 def solution(todo_list, finished):
-    answer = []
+    todo = []
     for i in range(len(finished)):
         if finished[i] == False:
-            answer.append(todo_list[i])
-    return answer
+            todo.append(todo_list[i])
+    return todo
