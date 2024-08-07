@@ -1,2 +1,3 @@
 def solution(my_string):
-    return my_string.split(' ')
+    answer = my_string.split(' ')
+    return answer
