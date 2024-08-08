@@ -3,9 +3,8 @@ def solution(board, k):
     n, m = len(board), len(board[0])
 
     for i in range(n):
-        for j in range(m):
-            if i + j <= k:
-                answer += board[i][j]
-            else:
-                break
+        max_j = min(m - 1, k - i)
+        for j in range(max_j + 1):
+            answer += board[i][j]
+    
     return answer
