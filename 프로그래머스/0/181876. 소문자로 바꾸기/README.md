@@ -1,10 +1,10 @@
 # [level 0] 소문자로 바꾸기 - 181876 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181876?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181876?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.00 ms
+메모리: 60.9 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 18일 23:51:19
+2024년 08월 10일 23:53:22
 
 ### 문제 설명
 
