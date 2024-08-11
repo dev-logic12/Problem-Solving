@@ -1,6 +1,8 @@
+import numpy as np
+
 def solution(arr):
-    for i in range(len(arr)):
-        for j in range(len(arr)):
-            if arr[i][j] != arr[j][i]:
-                return 0
-    return 1
+    matrix = np.array(arr)
+    if np.array_equal(matrix, matrix.T):
+        return 1
+    else:
+        return 0
