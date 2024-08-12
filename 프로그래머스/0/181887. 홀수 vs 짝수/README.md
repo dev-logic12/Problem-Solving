@@ -1,10 +1,10 @@
 # [level 0] 홀수 vs 짝수 - 181887 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181887?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181887) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.00 ms
+메모리: 10.2 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 05월 17일 23:34:18
+2024년 08월 12일 21:32:19
 
 ### 문제 설명
 
