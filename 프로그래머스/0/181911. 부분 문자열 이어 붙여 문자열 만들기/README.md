@@ -1,10 +1,10 @@
 # [level 0] 부분 문자열 이어 붙여 문자열 만들기 - 181911 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181911) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181911?language=java) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.04 ms
+메모리: 78.9 MB, 시간: 2.48 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 08월 15일 23:56:20
+2024년 08월 19일 23:29:54
 
 ### 문제 설명
 
