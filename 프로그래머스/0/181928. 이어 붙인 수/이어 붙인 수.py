@@ -1,11 +1,10 @@
 def solution(num_list):
-    odd_numbers = []
-    even_numbers = []
-    
+    answer = 0
+    a=""
+    b=""
     for i in num_list:
-        if i % 2 != 0:
-            odd_numbers.append(str(i))
+        if i%2!=0:
+            a+=str(i)
         else:
-            even_numbers.append(str(i))
-    
-    return int(''.join(odd_numbers)) + int(''.join(even_numbers))
+            b+=str(i)
+    return int(a)+int(b)
