@@ -1,10 +1,10 @@
 # [level 0] 그림 확대 - 181836 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181836) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181836?language=ruby) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.01 ms
+메모리: 13.9 MB, 시간: 0.16 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 06월 04일 23:57:18
+2024년 09월 02일 23:44:13
 
 ### 문제 설명
 
