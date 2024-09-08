@@ -1,3 +1,3 @@
 def solution(myString):
-    answer = [x if x > 'l' else 'l' for x in myString]
-    return ''.join(answer)
+    answer = ''.join(['l' if x < 'l' else x for x in myString])
+    return answer
