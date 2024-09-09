@@ -1,6 +1,5 @@
 def solution(n, control):
-    answer = n
-    c = { 'w':1, 's':-1, 'd':10, 'a':-10}
-    for i in control:
-        answer += c[i]
-    return answer
+    moves = [1, -1, 10, -10]
+    directions = ['w', 's', 'd', 'a']
+    
+    return n + sum(moves[directions.index(c)] for c in control)
