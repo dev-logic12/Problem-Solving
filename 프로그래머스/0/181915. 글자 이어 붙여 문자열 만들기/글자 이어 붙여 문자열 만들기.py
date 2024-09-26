@@ -1,5 +1,5 @@
 def solution(my_string, index_list):
-    answer = ""
+    string1 = ""
     for i in index_list:
-        answer += my_string[i]
-    return answer
+        string1 += my_string[i]
+    return string1
