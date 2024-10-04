@@ -4,11 +4,12 @@
 
 int solution(int** board, size_t board_rows, size_t board_cols, int k) {
     int answer = 0;
-    for(int r = 0; r < board_rows; r++) {
-        for(int c = 0; c < board_cols; c++) {
-            if(r + c > k) break;
-            answer += board[r][c];
-        }
-    }
+
+    for(int i=0;i<board_rows;i++)
+        for(int j=0;j<board_cols;j++)
+            if(i+j<=k)
+            {
+                answer+=board[i][j];
+            }
     return answer;
 }
