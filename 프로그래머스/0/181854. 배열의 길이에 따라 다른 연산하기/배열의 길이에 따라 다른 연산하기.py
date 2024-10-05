@@ -1,11 +1,5 @@
 def solution(arr, n):
-    if len(arr) % 2:
-        for i in range(0, len(arr), 2):
-            arr[i] += n
-    else:
-        for i in range(1, len(arr), 2):
-            arr[i] += n
+    answer = 0 if len(arr) % 2 else 1
+    for i in range(answer, len(arr), 2):
+        arr[i] += n
     return arr
-
-
-
