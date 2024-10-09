@@ -1,2 +1,10 @@
 def solution(board, k):
-    return sum(board[i][j] for i in range(len(board)) for j in range(len(board[0])) if i + j <= k)
+    answer = 0
+    n, m = len(board), len(board[0])
+
+    for i in range(n):
+        sum_j = min(k - i, m - 1)
+        for j in range(sum_j + 1):
+            answer += board[i][j]
+
+    return answer
