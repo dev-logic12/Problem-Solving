@@ -1,9 +1,15 @@
 function solution(board, k) {
-  let sum1 = 0;
-  for (let x = 0; x < board.length; x++) {
-    for (let y = 0; y < board[0].length; y++) {
-      if (x + y <= k) sum1 += board[x][y];
+  let sum = 0;
+  const rows = board.length;
+  const cols = board[0].length;
+  
+  for (let x = 0; x < rows; x++) {
+    for (let y = 0; y < cols; y++) {
+      if (x + y <= k) {
+        sum += board[x][y];
+      }
     }
   }
-  return sum1;
+  
+  return sum;
 }
