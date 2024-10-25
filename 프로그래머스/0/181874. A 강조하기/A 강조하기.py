@@ -1,2 +1,3 @@
 def solution(myString):
-    return myString.lower().replace('a', 'A')
+    answer = myString.lower().replace('a', 'A')
+    return answer 
