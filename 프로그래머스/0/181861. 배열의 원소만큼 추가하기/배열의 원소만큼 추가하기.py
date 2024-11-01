@@ -1,4 +1,6 @@
-def solution(arr): return [i for i in arr for _ in range(int(i))]
+def solution(arr): 
+    answer = [i for i in arr for _ in range(int(i))]
+    return answer 
 
 
 
