@@ -1,3 +1,2 @@
 def solution(myString, pat):
-    alter = myString.replace('A', 'b').replace('B', 'a')
-    return 1 if pat.lower() in alter else 0 
+    return int(''.join(['A' if i == 'B' else 'B' for i in pat]) in myString)
