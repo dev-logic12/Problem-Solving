@@ -1,1 +1,4 @@
-const solution=s=>s.toUpperCase()
+function solution(myString) {
+    var answer = '';
+    return myString.toUpperCase();
+}
