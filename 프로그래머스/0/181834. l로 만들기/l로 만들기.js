@@ -1,3 +1,1 @@
-function solution(myString) {
-    return [...myString].map((v) => v < 'l' ? 'l' : v).join('');
-}
+const solution = myString => myString.replace(/[a-k]/g,'l')
