@@ -1,3 +1,12 @@
 def solution(myString):
-    answer = myString.lower().replace('a', 'A')
-    return answer 
+    result = ''
+    for char in myString:
+        if char == 'a':
+            result += 'A'
+        elif char == 'A':
+            result += 'A'
+        elif char.isupper():
+            result += char.lower()
+        else:
+            result += char
+    return result
