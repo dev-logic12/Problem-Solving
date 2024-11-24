@@ -1,13 +1,12 @@
 def solution(arr):
-    answer = []
+    n=len(arr)
+    m=len(arr[0])
+    if n>m:
+        for i in range(n):
+            for j in range(n-m):
+                arr[i].append(0)
+    else:
+        for i in range(m-n):
+            arr.append([0]*m)
 
-    countMax = max(len(arr), max(len(row) for row in arr))
-    i = 0
-    while i < countMax:
-        if i < len(arr):
-            answer.append(arr[i] + [0] * (countMax - len(arr[i])))
-        else:
-            answer.append([0] * countMax)
-        i += 1
-
-    return answer
+    return arr
