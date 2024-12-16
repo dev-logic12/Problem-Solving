@@ -1,6 +1,6 @@
 # [level 0] 5명씩 - 181886 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181886?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181886) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 23일 23:16:54
+2024년 12월 16일 21:59:10
 
 ### 문제 설명
 
