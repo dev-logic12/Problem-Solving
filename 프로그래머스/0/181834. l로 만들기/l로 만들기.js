@@ -1,4 +1,3 @@
 function solution(myString) {
-    var answer = myString.replace(/[a-l]/gi,'l');
-    return answer;
+    return [...myString].map(char => char >= 'a' && char <= 'l' ? 'l' : char).join('');
 }
