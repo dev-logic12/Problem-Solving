@@ -1,3 +1,3 @@
 def solution(myString):
-    answer = ''.join(['l' if ord(i) < ord('l') else i for i in myString])
+    answer = myString.translate(str.maketrans('abcdefghijk', 'lllllllllll'))
     return answer
