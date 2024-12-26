@@ -1,2 +1,3 @@
 def solution(arr):
-    return int(arr == list(map(list, zip(*arr))))
+    answer = int(arr == list(map(list, zip(*arr))))
+    return answer 
