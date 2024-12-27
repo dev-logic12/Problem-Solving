@@ -1,6 +1,6 @@
 # [level 0] rny_string - 181863 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181863?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181863) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 11일 23:43:54
+2024년 12월 27일 23:52:04
 
 ### 문제 설명
 
