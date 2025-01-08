@@ -1,10 +1,11 @@
 function solution(picture, k) {
-    let result = [];
+    var answer = [];
 
-    picture.map((v) => {
-        const cur = [...v].map((c) => c.repeat(k)).join('');
-        for(let i = 0; i < k; i++) result.push(cur);
+    picture.forEach((line) => {
+        const expanded = [...line].reduce((acc, cur) => acc + cur.repeat(k), '');
+
+        for(let i=0; i<k; i++) answer.push(expanded);
     });
 
-    return result;
+    return answer;
 }
