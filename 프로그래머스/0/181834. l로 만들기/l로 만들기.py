@@ -1,3 +1,6 @@
 def solution(myString):
-    answer = myString.translate(str.maketrans('abcdefghijk', 'lllllllllll'))
-    return answer
+    s = list(myString)
+    for i in range(len(s)):
+        if ord(s[i]) < ord('l'):
+            s[i] = 'l'
+    return ''.join(s)
