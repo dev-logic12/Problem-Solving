@@ -1,4 +1,11 @@
 function solution(arr) {
-    answer = arr.every((r, i) => r.every((_, j) => arr[i][j] === arr[j][i])) ? 1 : 0;
-    return answer
+    const a = arr.length;
+
+    for(let i=0; i < a; i++) {
+        for(let j=i+1; j < a; j++) {
+            if(arr[i][j] !== arr[j][i]) return 0;
+        }
+    }
+
+    return 1;
 }
