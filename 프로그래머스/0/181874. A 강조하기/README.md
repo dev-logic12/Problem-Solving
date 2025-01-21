@@ -1,6 +1,6 @@
 # [level 0] A 강조하기 - 181874 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181874?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181874) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 11월 21일 20:40:59
+2025년 01월 21일 21:35:36
 
 ### 문제 설명
 
