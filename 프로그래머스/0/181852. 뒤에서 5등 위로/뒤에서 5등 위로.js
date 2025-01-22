@@ -1,3 +1,4 @@
 function solution(num_list) {
-    return num_list.sort((a, b) => a - b).splice(5);
+    var answer = [];
+    return answer = num_list.sort((a, b) => {return a - b;}).slice(5);
 }
