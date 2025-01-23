@@ -1,5 +1,7 @@
 def solution(arr):
-    n, m = len(arr), len(arr[0])
+    n = len(arr)
+    m  = len(arr[0])
+    
     if n > m:
         for row in arr:
             row.extend([0] * (n - m))
