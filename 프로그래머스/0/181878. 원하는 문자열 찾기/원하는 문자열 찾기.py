@@ -1,2 +1,3 @@
 def solution(myString, pat):
-    return int(pat.lower() in myString.lower())
+    answer = int(pat.lower() in myString.lower())
+    return answer
