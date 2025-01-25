@@ -1,1 +1,3 @@
-const solution=s=>s.toLowerCase().replaceAll('a','A');
+function solution(myString) {
+    return [...myString].map(str => ['a', 'A'].includes(str)? 'A' : str.toLowerCase()).join('');
+}
