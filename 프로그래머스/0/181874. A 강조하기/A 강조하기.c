@@ -1,16 +1,14 @@
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 char* solution(const char* myString) {
-    int len = strlen(myString);
-    char* answer = (char*)malloc(len + 1);
-    strcpy(answer, myString);
-    char* ptr = answer - 1;
-    while(*++ptr) {
-        if(*ptr >= 'A' && *ptr <= 'Z') *ptr += 'a' - 'A';
-        if(*ptr == 'a') *ptr = 'A';
+    char* answer = (char*)malloc(sizeof(char)*(strlen(myString)+1));
+    memcpy(answer, myString, strlen(myString)+1);
+    for(int i=0;i<strlen(answer);i++){
+        if(answer[i]=='a'||answer[i]=='A'){answer[i]='A';}
+        else{answer[i]=tolower(answer[i]);}
     }
     return answer;
 }
