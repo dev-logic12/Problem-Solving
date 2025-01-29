@@ -1,2 +1,3 @@
 def solution(n):
-    return f'{n}'
+    answer = f'{n}'
+    return answer
