@@ -1,1 +1,5 @@
-const solution = (arr, n) => arr.map((v, i) => v + (arr.length-i) % 2 * n);
+const solution = (arr, n) => arr.map((num, idx) => (
+    arr.length % 2 !== idx % 2
+    ? num + n
+    : num
+))
