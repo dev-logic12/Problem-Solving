@@ -1,1 +1,1 @@
-const solution = String
+const solution = n => String(n)
