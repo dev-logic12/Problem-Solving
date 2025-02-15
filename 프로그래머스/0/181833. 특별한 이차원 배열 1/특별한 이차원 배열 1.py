@@ -1,2 +1,10 @@
 def solution(n):
-    return [[int(i==j) for i in range(n)] for j in range(n)]
+    answer = [[]]
+    del answer[0]
+    for i in range(n):
+        answer.append(n*[0])
+
+    for i in range(n):
+        answer[i][i] = 1
+
+    return answer
