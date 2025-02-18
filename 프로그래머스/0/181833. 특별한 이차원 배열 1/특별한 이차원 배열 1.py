@@ -1,10 +1,4 @@
 def solution(n):
-    answer = [[]]
-    del answer[0]
-    for i in range(n):
-        answer.append(n*[0])
-
-    for i in range(n):
-        answer[i][i] = 1
-
+    answer=[[0]*n for i in range(n)]
+    for i in range(n): answer[i][i]=1
     return answer
