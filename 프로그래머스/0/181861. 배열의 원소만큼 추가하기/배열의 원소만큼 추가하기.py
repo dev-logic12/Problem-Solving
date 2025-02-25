@@ -1,5 +1,2 @@
 def solution(arr):
-    answer = []
-    for num in arr:
-        answer += [num] * num
-    return answer
+    return [i for i in arr for j in range(i)]
