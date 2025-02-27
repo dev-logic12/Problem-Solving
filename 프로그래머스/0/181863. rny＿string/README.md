@@ -1,10 +1,10 @@
 # [level 0] rny_string - 181863 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181863?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181863) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.08 ms
+메모리: 10.2 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 02월 20일 22:37:06
+2025년 02월 27일 22:32:18
 
 ### 문제 설명
 
