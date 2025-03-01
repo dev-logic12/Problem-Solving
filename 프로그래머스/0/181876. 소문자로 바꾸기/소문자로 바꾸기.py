@@ -1,3 +1,3 @@
 def solution(myString):
-    answer = myString.lower()
-    return answer
+    answer = ''
+    return myString.lower()
