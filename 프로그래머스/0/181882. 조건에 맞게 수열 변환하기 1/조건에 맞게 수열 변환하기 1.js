@@ -1,7 +1,1 @@
-function solution(arr) {
-    return arr.map(num => {
-        if(num >= 50 && !(num % 2)) return num / 2;
-        if(num < 50 && num % 2) return num * 2;
-        return num;
-    })
-}
+const solution=a=>a.map(v=>v>=50&&v%2==0?v/2:v<50&&v%2==1?v*2:v)
