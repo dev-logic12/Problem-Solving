@@ -1,4 +1,2 @@
-import numpy as np
-
 def solution(n):
-    return np.eye(n).tolist()
+    return [[int(i==j) for i in range(n)] for j in range(n)]
