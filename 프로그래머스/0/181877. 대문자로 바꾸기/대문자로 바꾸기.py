@@ -1,1 +1,3 @@
-solution = lambda n : n.upper()
+def solution(myString):
+    answer = myString.upper()
+    return answer 
