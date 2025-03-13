@@ -1,2 +1,4 @@
+import re
+
 def solution(rny_string):
-    return rny_string.replace('m', 'rn')
+    return re.sub("m","rn",rny_string)
