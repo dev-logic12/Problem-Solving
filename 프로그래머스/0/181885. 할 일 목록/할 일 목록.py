@@ -1,2 +1,1 @@
-def solution(todo_list, finished):
-    return [x for x, b in zip(todo_list, finished) if not b]
+solution = lambda x,y:[x for x,y in zip(x,y)if y^1]
