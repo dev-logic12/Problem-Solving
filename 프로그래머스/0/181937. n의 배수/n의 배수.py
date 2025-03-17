@@ -1,2 +1,3 @@
 def solution(num, n):
-    return int(not(num % n))
+    answer = int(not(num % n))
+    return answer
