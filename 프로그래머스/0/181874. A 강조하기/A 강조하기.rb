@@ -1,4 +1,3 @@
 def solution(myString)
-    answer = myString.downcase.gsub('a','A')
-    return answer
+    return myString.downcase.gsub('a','A')
 end
