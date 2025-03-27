@@ -1,10 +1,10 @@
 # [level 0] flag에 따라 다른 값 반환하기 - 181933 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181933?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181933?language=python3) 
 
 ### 성능 요약
 
-메모리: 33.4 MB, 시간: 0.02 ms
+메모리: 9.07 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,59 +16,59 @@
 
 ### 제출 일자
 
-2024년 05월 30일 11:31:05
+2025년 03월 27일 11:47:47
 
 ### 문제 설명
 
-<p>두 정수 <code>a</code>, <code>b</code>와 boolean 변수 <code>flag</code>가 매개변수로 주어질 때, <code>flag</code>가 true면 <code>a</code> + <code>b</code>를 false면 <code>a</code> - <code>b</code>를 return 하는 solution 함수를 작성해 주세요.</p>
+<p style="user-select: auto !important;">두 정수 <code style="user-select: auto !important;">a</code>, <code style="user-select: auto !important;">b</code>와 boolean 변수 <code style="user-select: auto !important;">flag</code>가 매개변수로 주어질 때, <code style="user-select: auto !important;">flag</code>가 true면 <code style="user-select: auto !important;">a</code> + <code style="user-select: auto !important;">b</code>를 false면 <code style="user-select: auto !important;">a</code> - <code style="user-select: auto !important;">b</code>를 return 하는 solution 함수를 작성해 주세요.</p>
 
-<hr>
+<hr style="user-select: auto !important;">
 
-<h5>제한사항</h5>
+<h5 style="user-select: auto !important;">제한사항</h5>
 
-<ul>
-<li>-1,000 ≤ <code>a</code>, <code>b</code> ≤ 1,000</li>
+<ul style="user-select: auto !important;">
+<li style="user-select: auto !important;">-1,000 ≤ <code style="user-select: auto !important;">a</code>, <code style="user-select: auto !important;">b</code> ≤ 1,000</li>
 </ul>
 
-<hr>
+<hr style="user-select: auto !important;">
 
-<h5>입출력 예</h5>
-<table class="table">
-        <thead><tr>
-<th>a</th>
-<th>b</th>
-<th>flag</th>
-<th>result</th>
+<h5 style="user-select: auto !important;">입출력 예</h5>
+<table class="table" style="user-select: auto !important;">
+        <thead style="user-select: auto !important;"><tr style="user-select: auto !important;">
+<th style="user-select: auto !important;">a</th>
+<th style="user-select: auto !important;">b</th>
+<th style="user-select: auto !important;">flag</th>
+<th style="user-select: auto !important;">result</th>
 </tr>
 </thead>
-        <tbody><tr>
-<td>-4</td>
-<td>7</td>
-<td>true</td>
-<td>3</td>
+        <tbody style="user-select: auto !important;"><tr style="user-select: auto !important;">
+<td style="user-select: auto !important;">-4</td>
+<td style="user-select: auto !important;">7</td>
+<td style="user-select: auto !important;">true</td>
+<td style="user-select: auto !important;">3</td>
 </tr>
-<tr>
-<td>-4</td>
-<td>7</td>
-<td>false</td>
-<td>-11</td>
+<tr style="user-select: auto !important;">
+<td style="user-select: auto !important;">-4</td>
+<td style="user-select: auto !important;">7</td>
+<td style="user-select: auto !important;">false</td>
+<td style="user-select: auto !important;">-11</td>
 </tr>
 </tbody>
       </table>
-<hr>
+<hr style="user-select: auto !important;">
 
-<h5>입출력 예</h5>
+<h5 style="user-select: auto !important;">입출력 예</h5>
 
-<p>입출력 예 #1</p>
+<p style="user-select: auto !important;">입출력 예 #1</p>
 
-<ul>
-<li>예제 1번에서 <code>flag</code>가 true이므로 <code>a</code> + <code>b</code> = (-4) + 7 = 3을 return 합니다.</li>
+<ul style="user-select: auto !important;">
+<li style="user-select: auto !important;">예제 1번에서 <code style="user-select: auto !important;">flag</code>가 true이므로 <code style="user-select: auto !important;">a</code> + <code style="user-select: auto !important;">b</code> = (-4) + 7 = 3을 return 합니다.</li>
 </ul>
 
-<p>입출력 예 #2</p>
+<p style="user-select: auto !important;">입출력 예 #2</p>
 
-<ul>
-<li>예제 2번에서 <code>flag</code>가 false이므로 <code>a</code> - <code>b</code> = (-4) - 7 = -11을 return 합니다.</li>
+<ul style="user-select: auto !important;">
+<li style="user-select: auto !important;">예제 2번에서 <code style="user-select: auto !important;">flag</code>가 false이므로 <code style="user-select: auto !important;">a</code> - <code style="user-select: auto !important;">b</code> = (-4) - 7 = -11을 return 합니다.</li>
 </ul>
 
 
