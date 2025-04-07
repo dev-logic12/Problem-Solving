@@ -1,1 +1,1 @@
-const solution = (str1, str2) => str2.includes(str1) ? 1 : 0;
+const solution = (a, b) => +b.includes(a);
