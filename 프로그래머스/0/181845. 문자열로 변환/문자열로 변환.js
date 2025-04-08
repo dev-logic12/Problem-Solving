@@ -1,1 +1,3 @@
-const solution = n => String(n)
+function solution(n) {
+    return n+"";
+}
