@@ -1,2 +1,1 @@
-def solution(num_list, n):
-    return num_list[n:] + num_list[:n]
+solution = lambda x, y :x[y:] + x[:y]
