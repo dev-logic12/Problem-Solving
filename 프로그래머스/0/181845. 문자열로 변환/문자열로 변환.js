@@ -1,3 +1,4 @@
 function solution(n) {
-    return n+"";
+    var answer = '';
+    return n.toString();
 }
