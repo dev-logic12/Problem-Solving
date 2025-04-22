@@ -1,10 +1,10 @@
 # [level 0] 뒤에서 5등까지 - 181853 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181853?language=ruby) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181853) 
 
 ### 성능 요약
 
-메모리: 14 MB, 시간: 0.01 ms
+메모리: 13.9 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,44 +16,44 @@
 
 ### 제출 일자
 
-2024년 03월 03일 14:43:39
+2025년 04월 22일 16:04:01
 
 ### 문제 설명
 
-<p>정수로 이루어진 리스트 <code>num_list</code>가 주어집니다. <code>num_list</code>에서 가장 작은 5개의 수를 오름차순으로 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
+<p style="user-select: auto !important;">정수로 이루어진 리스트 <code style="user-select: auto !important;">num_list</code>가 주어집니다. <code style="user-select: auto !important;">num_list</code>에서 가장 작은 5개의 수를 오름차순으로 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
 
-<hr>
+<hr style="user-select: auto !important;">
 
-<h5>제한사항</h5>
+<h5 style="user-select: auto !important;">제한사항</h5>
 
-<ul>
-<li>6 ≤ <code>num_list</code>의 길이 ≤ 30</li>
-<li>1 ≤ <code>num_list</code>의 원소 ≤ 100</li>
+<ul style="user-select: auto !important;">
+<li style="user-select: auto !important;">6 ≤ <code style="user-select: auto !important;">num_list</code>의 길이 ≤ 30</li>
+<li style="user-select: auto !important;">1 ≤ <code style="user-select: auto !important;">num_list</code>의 원소 ≤ 100</li>
 </ul>
 
-<hr>
+<hr style="user-select: auto !important;">
 
-<h5>입출력 예</h5>
-<table class="table">
-        <thead><tr>
-<th>num_list</th>
-<th>result</th>
+<h5 style="user-select: auto !important;">입출력 예</h5>
+<table class="table" style="user-select: auto !important;">
+        <thead style="user-select: auto !important;"><tr style="user-select: auto !important;">
+<th style="user-select: auto !important;">num_list</th>
+<th style="user-select: auto !important;">result</th>
 </tr>
 </thead>
-        <tbody><tr>
-<td>[12, 4, 15, 46, 38, 1, 14]</td>
-<td>[1, 4, 12, 14, 15]</td>
+        <tbody style="user-select: auto !important;"><tr style="user-select: auto !important;">
+<td style="user-select: auto !important;">[12, 4, 15, 46, 38, 1, 14]</td>
+<td style="user-select: auto !important;">[1, 4, 12, 14, 15]</td>
 </tr>
 </tbody>
       </table>
-<hr>
+<hr style="user-select: auto !important;">
 
-<h5>입출력 예 설명</h5>
+<h5 style="user-select: auto !important;">입출력 예 설명</h5>
 
-<p>입출력 예 #1</p>
+<p style="user-select: auto !important;">입출력 예 #1</p>
 
-<ul>
-<li>[12, 4, 15, 46, 38, 1, 14]를 정렬하면 [1, 4, 12, 14, 15, 38, 46]이 되고, 앞에서 부터 5개를 고르면 [1, 4, 12, 14, 15]가 됩니다.</li>
+<ul style="user-select: auto !important;">
+<li style="user-select: auto !important;">[12, 4, 15, 46, 38, 1, 14]를 정렬하면 [1, 4, 12, 14, 15, 38, 46]이 되고, 앞에서 부터 5개를 고르면 [1, 4, 12, 14, 15]가 됩니다.</li>
 </ul>
 
 

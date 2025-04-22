@@ -1,3 +1,4 @@
 def solution(num_list)
-    return num_list.min(5).sort
+    answer = num_list.sort[0, 5]
+    return answer
 end
