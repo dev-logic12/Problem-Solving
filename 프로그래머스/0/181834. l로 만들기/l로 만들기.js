@@ -1,2 +1,3 @@
-const solution = myString => 
-  myString.split('').map(char => (char >= 'a' && char <= 'k' ? 'l' : char)).join('');
+function solution(myString) {
+    return [...myString].map((v) => v < 'l' ? 'l' : v).join('');
+}
