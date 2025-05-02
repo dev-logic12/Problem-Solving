@@ -1,10 +1,10 @@
 # [level 0] n의 배수 - 181937 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181937?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181937) 
 
 ### 성능 요약
 
-메모리: 9.34 MB, 시간: 0.00 ms
+메모리: 9.13 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 04월 27일 22:19:53
+2025년 05월 02일 23:33:59
 
 ### 문제 설명
 
