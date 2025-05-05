@@ -1,1 +1,2 @@
-print(input().strip().replace(' ', ''))
+str1, str2 = input().strip().split()
+print(str1 + str2)
