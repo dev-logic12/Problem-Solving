@@ -1,9 +1,9 @@
 def solution(picture, k):
     answer = []
     for i in picture:
-        s = ''
+        solution = ''
         for j in i:
-            s += j * k
+            solution += j * k
         for _ in range(k):
-            answer.append(s) 
+            answer.append(solution) 
     return answer
