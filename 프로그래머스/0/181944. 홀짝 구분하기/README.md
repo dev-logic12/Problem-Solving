@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 7.52 MB, 시간: 16.48 ms
+메모리: 7.53 MB, 시간: 12.49 ms
 
 ### 구분
 
@@ -16,37 +16,37 @@
 
 ### 제출 일자
 
-2025년 04월 17일 15:36:29
+2025년 05월 26일 20:50:50
 
 ### 문제 설명
 
-<p style="user-select: auto !important;">자연수 <code style="user-select: auto !important;">n</code>이 입력으로 주어졌을 때 만약 <code style="user-select: auto !important;">n</code>이 짝수이면 "<code style="user-select: auto !important;">n</code> is even"을, 홀수이면 "<code style="user-select: auto !important;">n</code> is odd"를 출력하는 코드를 작성해 보세요.</p>
+<p>자연수 <code>n</code>이 입력으로 주어졌을 때 만약 <code>n</code>이 짝수이면 "<code>n</code> is even"을, 홀수이면 "<code>n</code> is odd"를 출력하는 코드를 작성해 보세요.</p>
 
-<hr style="user-select: auto !important;">
+<hr>
 
-<h5 style="user-select: auto !important;">제한사항</h5>
+<h5>제한사항</h5>
 
-<ul style="user-select: auto !important;">
-<li style="user-select: auto !important;">1 ≤ <code style="user-select: auto !important;">n</code> ≤ 1,000</li>
+<ul>
+<li>1 ≤ <code>n</code> ≤ 1,000</li>
 </ul>
 
-<hr style="user-select: auto !important;">
+<hr>
 
-<h5 style="user-select: auto !important;">입출력 예</h5>
+<h5>입출력 예</h5>
 
-<p style="user-select: auto !important;">입력 #1</p>
-<div class="highlight" style="user-select: auto !important;"><pre class="codehilite" style="user-select: auto !important;"><code style="user-select: auto !important;">100
+<p>입력 #1</p>
+<div class="highlight"><pre class="codehilite"><code>100
 </code></pre></div>
-<p style="user-select: auto !important;">출력 #1</p>
-<div class="highlight" style="user-select: auto !important;"><pre class="codehilite" style="user-select: auto !important;"><code style="user-select: auto !important;">100 is even
+<p>출력 #1</p>
+<div class="highlight"><pre class="codehilite"><code>100 is even
 </code></pre></div>
-<p style="user-select: auto !important;">입력 #2</p>
-<div class="highlight" style="user-select: auto !important;"><pre class="codehilite" style="user-select: auto !important;"><code style="user-select: auto !important;">1
+<p>입력 #2</p>
+<div class="highlight"><pre class="codehilite"><code>1
 </code></pre></div>
-<p style="user-select: auto !important;">출력 #2</p>
-<div class="highlight" style="user-select: auto !important;"><pre class="codehilite" style="user-select: auto !important;"><code style="user-select: auto !important;">1 is odd
+<p>출력 #2</p>
+<div class="highlight"><pre class="codehilite"><code>1 is odd
 </code></pre></div>
-<p style="user-select: auto !important;">※ 2023년 05월 15일 지문이 수정되었습니다.</p>
+<p>※ 2023년 05월 15일 지문이 수정되었습니다.</p>
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
