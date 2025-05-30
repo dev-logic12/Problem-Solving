@@ -1,7 +1,8 @@
 def solution(numbers, n):
-    answer = 0
-    i=0
-    while answer<=n:
-        answer+=numbers[i]
-        i+=1
-    return answer
+    sum = 0
+    for e in numbers:
+        if sum > n:
+            return sum
+        else:
+            sum += e
+    return sum
