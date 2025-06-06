@@ -1,2 +1,3 @@
 def solution(a, b):
-    return int(max(f"{a}{b}", f"{b}{a}"))
+    answer = int(max(f"{a}{b}", f"{b}{a}"))
+    return answer
