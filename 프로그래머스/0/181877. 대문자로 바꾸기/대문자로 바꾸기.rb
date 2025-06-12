@@ -1,4 +1,3 @@
 def solution(myString)
-    answer = myString.upcase
-    return answer
+    return myString.upcase
 end
