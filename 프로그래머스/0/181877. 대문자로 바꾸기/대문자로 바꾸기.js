@@ -1,3 +1,1 @@
-function solution(myString) {
-    return myString.toUpperCase();
-}
+const solution = s => s.toUpperCase()
