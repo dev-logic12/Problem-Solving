@@ -1,7 +1,6 @@
 def solution(numbers, n):
     answer = 0
-    i = 0
-    while answer <= n:
-        answer += numbers[i]
-        i += 1
-    return answer
+    for i in range(len(numbers)):
+        answer = sum(numbers[:i+1])
+        if answer > n:
+            return answer
