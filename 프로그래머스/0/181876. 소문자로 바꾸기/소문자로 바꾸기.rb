@@ -1,3 +1,4 @@
 def solution(myString)
-    return myString.downcase
+    answer = myString.downcase
+    return answer
 end
