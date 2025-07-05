@@ -1,10 +1,10 @@
 # [level 0] 커피 심부름 - 181837 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181837?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181837) 
 
 ### 성능 요약
 
-메모리: 10.3 MB, 시간: 0.12 ms
+메모리: 33.4 MB, 시간: 0.16 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 03월 14일 17:48:12
+2025년 07월 05일 12:42:02
 
 ### 문제 설명
 
