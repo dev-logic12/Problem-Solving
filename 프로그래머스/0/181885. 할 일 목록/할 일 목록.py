@@ -1,1 +1,2 @@
-solution = lambda x,y:[x for x,y in zip(x,y)if y^1]
+def solution(todo_list, finished):
+    return [work for idx, work in enumerate(todo_list) if not finished[idx]]
