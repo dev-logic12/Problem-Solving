@@ -1,10 +1,10 @@
 # [level 0] 할 일 목록 - 181885 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181885) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181885?language=javascript) 
 
 ### 성능 요약
 
-메모리: 9.26 MB, 시간: 0.01 ms
+메모리: 33.6 MB, 시간: 0.07 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 08일 23:24:28
+2025년 07월 09일 23:05:49
 
 ### 문제 설명
 
