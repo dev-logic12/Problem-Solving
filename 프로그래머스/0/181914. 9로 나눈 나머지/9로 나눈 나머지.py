@@ -1,2 +1,3 @@
 def solution(number):
-    return int(number) % 9
+    answer = int(number) % 9
+    return answer
