@@ -1,2 +1,3 @@
 def solution(start, end):
-    return list(range(start,end-1,-1))
+    answer = list(range(start,end-1,-1))
+    return answer
