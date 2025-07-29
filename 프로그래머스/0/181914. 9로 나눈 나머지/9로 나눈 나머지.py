@@ -1,3 +1,1 @@
-def solution(number):
-    answer = int(number) % 9
-    return answer
+solution = lambda x : int(x)%9
