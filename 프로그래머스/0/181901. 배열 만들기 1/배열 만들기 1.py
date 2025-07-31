@@ -1,2 +1,3 @@
 def solution(n, k):
-    return list(range(k, n + 1, k))
+    answer = list(range(k, n + 1, k))
+    return answer
