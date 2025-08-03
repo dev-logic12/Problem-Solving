@@ -1,6 +1,6 @@
 # [level 0] 카운트 다운 - 181899 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181899?language=ruby) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181899) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 01일 23:24:18
+2025년 08월 03일 22:42:44
 
 ### 문제 설명
 
