@@ -1,5 +1,8 @@
 def solution(my_string):
-    n = len(my_string)
-    suffixes = list(range(n))
-    suffixes.sort(key=lambda i: my_string[i:])
-    return [my_string[i:] for i in suffixes]
+    answer = []
+
+    for i in range(len(my_string)):
+        answer.append(my_string[i:])
+    answer.sort()
+
+    return answer
