@@ -1,8 +1,10 @@
 function solution(n, control) {
-  const move = [1, -1, 10, -10];
-  const directions = ['w', 's', 'd', 'a'];
+  const move = { w: 1, s: -1, d: 10, a: -10 };
+  let total = 0;
 
-  return n + [...control].reduce((acc, c) => {
-    return acc + move[directions.indexOf(c)];
-  }, 0);
+  for (const c of control) {
+    total += move[c];
+  }
+
+  return n + total;
 }
