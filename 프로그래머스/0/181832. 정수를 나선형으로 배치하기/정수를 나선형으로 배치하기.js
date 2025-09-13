@@ -1,20 +1,16 @@
 function solution(n) {
-    const move = [[0, 1], [1, 0], [0, -1], [-1, 0]];
-    const answer = Array.from(new Array(n), () => new Array(n).fill(0))
-    let x = 0, y = 0, dir = 0, num = 1;
-    while(num <= n * n) {
-        answer[x][y] = num;
-        let nextX = x + move[dir][0];
-        let nextY = y + move[dir][1];
-        if (nextX >= n || nextX < 0 || nextY >= n || nextY < 0 || answer[nextX][nextY] !== 0) {
-            dir = (dir + 1) % 4;
-            nextX = x + move[dir][0];
-            nextY = y + move[dir][1];
-        }
-        x = nextX;
-        y = nextY;
-        num ++;
+  const a = Array.from({ length: n }, () => Array(n).fill(0));
+  let num = 1, top = 0, bottom = n - 1, left = 0, right = n - 1;
 
-    }
-    return answer;
+  while (top <= bottom && left <= right) {
+    for (let j = left; j <= right; j++) a[top][j] = num++;
+    top++;
+    for (let i = top; i <= bottom; i++) a[i][right] = num++;
+    right--;
+    for (let j = right; j >= left; j--) a[bottom][j] = num++;
+    bottom--;
+    for (let i = bottom; i >= top; i--) a[i][left] = num++;
+    left++;
+  }
+  return a;
 }
