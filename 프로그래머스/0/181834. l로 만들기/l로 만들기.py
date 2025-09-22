@@ -1,2 +1,2 @@
 def solution(myString):
-    return myString.translate(str.maketrans('abcdefghijk', 'lllllllllll'))
+    return ''.join(c if c >= 'l' else 'l' for c in myString)
