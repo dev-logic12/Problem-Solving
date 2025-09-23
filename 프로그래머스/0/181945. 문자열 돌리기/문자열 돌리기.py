@@ -1,2 +1,1 @@
-for a in input():
-    print(a)
+print(*input(), sep="\n")
