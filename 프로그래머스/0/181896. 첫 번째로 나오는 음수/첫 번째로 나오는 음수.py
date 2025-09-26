@@ -1,2 +1,4 @@
 def solution(num_list):
-    return next((i for i, x in enumerate(num_list) if x < 0), -1)
+    for i in range(len(num_list)):
+        if num_list[i]<0:return i
+    return -1
