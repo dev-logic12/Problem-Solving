@@ -1,3 +1,3 @@
-def solution(my_string, is_prefix)
-  my_string.start_with?(is_prefix) ? 1 : 0
+def solution(my_string, prefix)
+  my_string.start_with?(prefix) && 1 || 0
 end
