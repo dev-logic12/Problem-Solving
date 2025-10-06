@@ -1,5 +1,3 @@
 def solution(a, b)
-  ab = (a.to_s + b.to_s).to_i
-  ba = (b.to_s + a.to_s).to_i
-  ab >= ba ? ab : ba
+  [a, b].permutation.map { |x, y| (x.to_s + y.to_s).to_i }.max
 end
