@@ -1,3 +1,3 @@
 function solution(a, b) {
-    return Math.max(Number(`${a}${b}`), Number(`${b}${a}`))
+  return Math.max(a * 10 ** String(b).length + b, b * 10 ** String(a).length + a);
 }
