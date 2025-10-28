@@ -1,3 +1,7 @@
 def solution(num_list, n)
-  num_list.each_with_index.select { |_, i| i % n == 0 }.map(&:first)
+  result = []
+  num_list.each_with_index do |num, i|
+    result << num if i % n == 0
+  end
+  result
 end
