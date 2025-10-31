@@ -1,1 +1,2 @@
-print(input().replace(' ', ''))
+print(''.join(input().split()))
+
