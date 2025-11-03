@@ -1,6 +1,6 @@
 function solution(num_list) {
-    const len = num_list.length;
-    const a = num_list[len - 1];  
-    const b = num_list[len - 2];  
-    return [...num_list, a > b ? a - b : a * 2];
+  const l = num_list.length;
+  return [...num_list, num_list[l - 1] > num_list[l - 2] 
+    ? num_list[l - 1] - num_list[l - 2] 
+    : num_list[l - 1] * 2];
 }
