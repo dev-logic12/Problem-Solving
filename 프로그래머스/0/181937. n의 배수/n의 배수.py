@@ -1,2 +1,2 @@
 def solution(num, n):
-    return int(not(num % n))
+    return 1 if not num%n else 0
